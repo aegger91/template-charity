@@ -2,6 +2,7 @@ import "@fontsource-variable/fraunces";
 import "@fontsource-variable/public-sans";
 import "@fontsource/cormorant-sc/500.css";
 import "@fontsource/cormorant-sc/600.css";
+import "@fontsource-variable/noto-sans";
 import "@fontsource-variable/noto-naskh-arabic";
 import "@fontsource-variable/noto-kufi-arabic";
 import "../globals.css";

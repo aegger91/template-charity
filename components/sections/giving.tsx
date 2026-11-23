@@ -70,8 +70,10 @@ export function SponsorshipSection({ section, lang }: SectionProps<SponsorSectio
                   <span className="text-sm text-muted-foreground">{tr("perMonth", lang)}</span>
                 </p>
                 <p className="text-xs text-muted-foreground">{tr("perMonthSample", lang)}</p>
-                <Button asChild variant="outline" className="mt-5 h-11 rounded-full border-teal/40 text-base font-semibold text-teal-deep hover:bg-teal-tint">
-                  <Link href={`${giveHref}?fund=${o.fundId}&frequency=monthly`}>{tr("askAboutSponsoring", lang)}</Link>
+                <Button asChild variant="outline" className="mt-5 h-auto min-h-11 rounded-full border-teal/40 px-4 py-2 text-base leading-snug font-semibold whitespace-normal text-teal-deep hover:bg-teal-tint">
+                  <Link href={`${giveHref}?fund=${o.fundId}&frequency=monthly`} className="text-center">
+                    {tr("askAboutSponsoring", lang)}
+                  </Link>
                 </Button>
               </article>
             );

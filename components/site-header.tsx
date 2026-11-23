@@ -62,21 +62,18 @@ export function SiteHeader({ lang, dir, homeHref, logo, drawerLogo, nav, donate,
 
   return (
     <header
+      data-header
       data-condensed={condensed || undefined}
       className={cn(
-        "sticky top-0 z-50 border-b transition-[background-color,box-shadow,border-color] duration-300",
+        // Fixed height: only paint changes on scroll so the bar never jitters or shifts layout.
+        "sticky top-0 z-50 h-[var(--token-layout-headerHeight)] border-b",
         condensed
           ? "border-border/80 bg-surface/95 shadow-[0_8px_30px_-12px_rgba(9,62,75,0.25)] backdrop-blur-md"
           : "border-transparent bg-background",
       )}
-      style={{ ["--logo-size" as string]: condensed ? "2.5rem" : "3rem" }}
+      style={{ ["--logo-size" as string]: condensed ? "2.5rem" : "2.75rem" }}
     >
-      <div
-        className={cn(
-          "container-site flex items-center gap-3 transition-[height] duration-300",
-          condensed ? "h-[var(--token-layout-headerHeightCondensed)]" : "h-[var(--token-layout-headerHeight)]",
-        )}
-      >
+      <div className="container-site flex h-full items-center gap-3">
         <Link href={homeHref} className="min-w-0 shrink rounded-md focus-visible:ring-3 focus-visible:ring-ring/50 focus-visible:outline-none">
           {logo}
         </Link>
@@ -121,10 +118,10 @@ export function SiteHeader({ lang, dir, homeHref, logo, drawerLogo, nav, donate,
             </DropdownMenuContent>
           </DropdownMenu>
 
-          <Button asChild className="h-10 rounded-full bg-gold px-4 text-[0.95rem] font-semibold text-gold-ink shadow-[0_6px_18px_-8px_rgba(143,101,20,0.8)] hover:bg-gold/90 sm:px-5">
-            <Link href={donate.href}>
+          <Button asChild className="h-10 max-w-[min(100%,11.5rem)] rounded-full bg-gold px-3 text-[0.9rem] leading-tight font-semibold whitespace-normal text-gold-ink shadow-[0_6px_18px_-8px_rgba(143,101,20,0.8)] hover:bg-gold/90 sm:max-w-none sm:px-5 sm:text-[0.95rem] sm:whitespace-nowrap">
+            <Link href={donate.href} className="inline-flex items-center justify-center gap-1.5 text-center">
               <DonateMark />
-              {donate.label}
+              <span>{donate.label}</span>
             </Link>
           </Button>
 
@@ -172,7 +169,7 @@ export function SiteHeader({ lang, dir, homeHref, logo, drawerLogo, nav, donate,
                   <Link href={donate.href}>{donate.label}</Link>
                 </Button>
                 <div>
-                  <p className="mb-2 text-xs font-semibold tracking-wide text-muted-foreground uppercase">{strings.language}</p>
+                  <p className="mb-2 text-xs font-semibold text-muted-foreground">{strings.language}</p>
                   <div className="flex flex-wrap gap-2">
                     {languages.map((l) => (
                       <Link
@@ -269,8 +266,10 @@ function DesktopDropdown({ item, pathname, homeHref }: { item: NavEntry; pathnam
       <div
         className={cn(
           "absolute start-0 top-full z-50 pt-2 transition-[opacity,translate] duration-150",
-          open ? "visible translate-y-0 opacity-100" : "invisible -translate-y-1 opacity-0",
+          open ? "visible translate-y-0 opacity-100" : "invisible pointer-events-none -translate-y-1 opacity-0",
         )}
+        hidden={!open}
+        aria-hidden={!open}
       >
         <ul className="min-w-64 rounded-xl border bg-surface p-2 shadow-[0_20px_50px_-20px_rgba(9,62,75,0.35)]">
           {item.children!.map((c) => (

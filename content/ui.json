@@ -81,7 +81,7 @@
     "giveAmount": { "en": "Give {amount}", "es": "Donar {amount}", "ar": "تبرّع بمبلغ {amount}" },
     "giveAmountMonthly": { "en": "Give {amount} monthly", "es": "Donar {amount} al mes", "ar": "تبرّع بمبلغ {amount} شهريًا" },
     "processing": { "en": "Processing", "es": "Procesando", "ar": "جارٍ المعالجة" },
-    "errorAmount": { "en": "Enter an amount of at least {min}.", "es": "Introduce un importe de al menos {min}.", "ar": "أدخل مبلغًا لا يقل عن {min}." },
+    "errorAmount": { "en": "Enter a valid amount.", "es": "Introduce un importe válido.", "ar": "أدخل مبلغًا صالحًا." },
     "errorName": { "en": "Enter your name.", "es": "Escribe tu nombre.", "ar": "أدخل اسمك." },
     "errorEmail": { "en": "Enter a valid email address.", "es": "Introduce un correo válido.", "ar": "أدخل بريدًا إلكترونيًا صحيحًا." },
     "errorHonoree": { "en": "Enter the name of the person you are honoring.", "es": "Escribe el nombre de la persona homenajeada.", "ar": "أدخل اسم الشخص الذي تكرّمه." },

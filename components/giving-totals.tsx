@@ -56,7 +56,7 @@ export function SampleBadge({ lang, tone = "light", note, label }: { lang: strin
         <button
           type="button"
           className={cn(
-            "inline-flex items-center gap-1 rounded-full border px-2 py-0.5 text-[0.7rem] font-semibold tracking-wide uppercase",
+            "inline-flex items-center gap-1 rounded-full border px-2 py-0.5 text-[0.7rem] leading-snug font-semibold tracking-wide uppercase overflow-visible",
             tone === "dark" ? "border-gold/60 text-gold" : "border-gold-deep/40 bg-gold-soft/70 text-gold-deep",
           )}
         >
@@ -177,7 +177,7 @@ export function GivingStat({
 export function StatTile({ label, children, sample }: { label: string; children: React.ReactNode; sample?: boolean }) {
   return (
     <div className="relative flex min-w-0 flex-col gap-2 border-white/10 px-1 py-2 sm:border-s sm:ps-6" data-sample={sample || undefined}>
-      <span className="font-heading text-[clamp(1.85rem,5.4vw,3rem)] leading-none font-semibold whitespace-nowrap text-gold">{children}</span>
+      <span className="font-heading text-[clamp(1.85rem,5.4vw,3rem)] leading-[1.15] font-semibold text-gold">{children}</span>
       <span className="text-[0.95rem] text-white/80">{label}</span>
     </div>
   );

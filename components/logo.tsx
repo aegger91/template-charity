@@ -43,7 +43,7 @@ export function Logo({ lang, style = site.logo.style, inverted, className, showN
   return (
     <span className={cn("flex min-w-0 items-center gap-3", className)} data-logo-style={style}>
       {mark ? (
-        <span className="logo-box block size-[var(--logo-size,3rem)] shrink-0 transition-[width,height] duration-300">
+        <span className="logo-box block size-[var(--logo-size,2.75rem)] shrink-0">
           {mark}
         </span>
       ) : null}

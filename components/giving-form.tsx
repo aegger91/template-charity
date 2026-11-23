@@ -30,7 +30,6 @@ type Dedication = "none" | Tribute["kind"];
 type Card = Tribute["card"];
 
 const EMAIL = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-const MIN = 5;
 
 export function GivingForm({ lang, orgName, currency, funds, presets, monthlyPresets }: Props) {
   const s = (k: UiKey, v?: Record<string, string | number>) => tr(k, lang, v);
@@ -38,7 +37,7 @@ export function GivingForm({ lang, orgName, currency, funds, presets, monthlyPre
 
   const [frequency, setFrequency] = useState<Frequency>("one-time");
   const amounts = frequency === "monthly" ? monthlyPresets : presets;
-  const [preset, setPreset] = useState<number | null>(presets[1] ?? presets[0]);
+  const [preset, setPreset] = useState<number | null>(null);
   const [custom, setCustom] = useState("");
   const [fundId, setFundId] = useState(funds[0]?.fundId ?? "general-fund");
   const [dedication, setDedication] = useState<Dedication>("none");
@@ -76,7 +75,7 @@ export function GivingForm({ lang, orgName, currency, funds, presets, monthlyPre
 
   function validate() {
     const e: Record<string, string> = {};
-    if (amount < MIN) e.amount = s("errorAmount", { min: money(MIN) });
+    if (!Number.isFinite(amount) || amount < 0) e.amount = s("errorAmount");
     if (!name.trim()) e.name = s("errorName");
     if (!EMAIL.test(email.trim())) e.email = s("errorEmail");
     if (dedication !== "none" && !honoree.trim()) e.honoree = s("errorHonoree");
@@ -116,7 +115,7 @@ export function GivingForm({ lang, orgName, currency, funds, presets, monthlyPre
     }
   }
 
-  const submitLabel = amount >= MIN
+  const submitLabel = amount > 0
     ? frequency === "monthly"
       ? s("giveAmountMonthly", { amount: money(amount) })
       : s("giveAmount", { amount: money(amount) })
@@ -129,7 +128,7 @@ export function GivingForm({ lang, orgName, currency, funds, presets, monthlyPre
           <Fieldset legend={s("frequency")}>
             <div className="grid grid-cols-2 gap-1 rounded-full bg-muted p-1">
               {(["one-time", "monthly"] as Frequency[]).map((f) => (
-                <Choice key={f} name="frequency" checked={frequency === f} onChange={() => { setFrequency(f); setPreset((f === "monthly" ? monthlyPresets : presets)[1] ?? null); setCustom(""); }} pill>
+                <Choice key={f} name="frequency" checked={frequency === f} onChange={() => { setFrequency(f); setPreset(null); setCustom(""); }} pill>
                   {f === "monthly" ? s("monthly") : s("oneTime")}
                 </Choice>
               ))}

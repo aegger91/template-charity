@@ -1,5 +1,6 @@
 import "@fontsource-variable/fraunces";
 import "@fontsource-variable/public-sans";
+import "@fontsource-variable/noto-sans";
 import "./globals.css";
 
 import type { Metadata } from "next";
