@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Sponsorship",
+  "type": "object",
+  "required": [
+    "note",
+    "options"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "note": {
+      "$ref": "common.schema.json#/$defs/localized"
+    },
+    "options": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "title",
+          "body",
+          "monthlyAmount",
+          "fundId"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "$ref": "common.schema.json#/$defs/slug"
+          },
+          "title": {
+            "$ref": "common.schema.json#/$defs/localized"
+          },
+          "body": {
+            "$ref": "common.schema.json#/$defs/localized"
+          },
+          "monthlyAmount": {
+            "type": "number",
+            "minimum": 1
+          },
+          "fundId": {
+            "$ref": "common.schema.json#/$defs/fundId"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,458 @@
+{
+  "$schema": "../schemas/site.schema.json",
+  "name": {
+    "en": "St. Example Orthodox Charity",
+    "es": "Caridad Ortodoxa San Ejemplo",
+    "ar": "جمعية القديس المثال الخيرية الأرثوذكسية"
+  },
+  "shortName": {
+    "en": "St. Example",
+    "es": "San Ejemplo",
+    "ar": "القديس المثال"
+  },
+  "mission": {
+    "en": "We help Orthodox parishes feed, house and care for their neighbors.",
+    "es": "Ayudamos a las parroquias ortodoxas a alimentar, abrigar y cuidar a sus vecinos.",
+    "ar": "نساعد الرعايا الأرثوذكسية على إطعام جيرانها وإيوائهم ورعايتهم."
+  },
+  "description": {
+    "en": "A sample website for an Orthodox charity. Every name, figure and story on this site is placeholder content.",
+    "es": "Un sitio web de muestra para una organización benéfica ortodoxa. Todos los nombres, cifras e historias son contenido de ejemplo.",
+    "ar": "موقع نموذجي لجمعية خيرية أرثوذكسية. كل الأسماء والأرقام والقصص في هذا الموقع محتوى تجريبي."
+  },
+  "sampleNotice": {
+    "en": "Sample template. Names, figures and stories are placeholders.",
+    "es": "Plantilla de muestra. Nombres, cifras e historias son de ejemplo.",
+    "ar": "قالب نموذجي. الأسماء والأرقام والقصص للتوضيح فقط."
+  },
+  "defaultLanguage": "en",
+  "languages": [
+    {
+      "code": "en",
+      "label": "English",
+      "dir": "ltr",
+      "locale": "en-US"
+    },
+    {
+      "code": "es",
+      "label": "Español",
+      "dir": "ltr",
+      "locale": "es-ES"
+    },
+    {
+      "code": "ar",
+      "label": "العربية",
+      "dir": "rtl",
+      "locale": "ar-EG"
+    }
+  ],
+  "currency": "USD",
+  "logo": {
+    "style": "square-image",
+    "image": "/images/logo/logo-square.svg",
+    "alt": {
+      "en": "St. Example Orthodox Charity logo",
+      "es": "Logotipo de Caridad Ortodoxa San Ejemplo",
+      "ar": "شعار جمعية القديس المثال الخيرية الأرثوذكسية"
+    },
+    "sealText": {
+      "en": "St. Example Orthodox Charity",
+      "es": "Caridad Ortodoxa San Ejemplo",
+      "ar": "جمعية القديس المثال الخيرية"
+    }
+  },
+  "contact": {
+    "email": "hello@example.org",
+    "phone": "+1 (555) 010-0100",
+    "address": {
+      "en": "100 Example Street, Suite 2, Sample City, ST 00000",
+      "es": "Calle Ejemplo 100, Oficina 2, Ciudad de Muestra, ST 00000",
+      "ar": "١٠٠ شارع المثال، مكتب ٢، مدينة النموذج، ST 00000"
+    },
+    "hours": {
+      "en": "Monday to Thursday, 9:00 to 17:00",
+      "es": "De lunes a jueves, de 9:00 a 17:00",
+      "ar": "من الاثنين إلى الخميس، من ٩:٠٠ إلى ١٧:٠٠"
+    }
+  },
+  "navigation": [
+    {
+      "label": {
+        "en": "Our Work",
+        "es": "Nuestra labor",
+        "ar": "عملنا"
+      },
+      "page": "our-work",
+      "children": [
+        {
+          "label": {
+            "en": "Programs",
+            "es": "Programas",
+            "ar": "البرامج"
+          },
+          "page": "our-work"
+        },
+        {
+          "label": {
+            "en": "Where we work",
+            "es": "Dónde trabajamos",
+            "ar": "أين نعمل"
+          },
+          "page": "where-we-work"
+        },
+        {
+          "label": {
+            "en": "Stories",
+            "es": "Historias",
+            "ar": "قصص"
+          },
+          "page": "news"
+        }
+      ]
+    },
+    {
+      "label": {
+        "en": "Campaigns",
+        "es": "Campañas",
+        "ar": "الحملات"
+      },
+      "page": "campaigns"
+    },
+    {
+      "label": {
+        "en": "Get Involved",
+        "es": "Participa",
+        "ar": "شارك معنا"
+      },
+      "page": "get-involved",
+      "children": [
+        {
+          "label": {
+            "en": "Needs board",
+            "es": "Tablón de necesidades",
+            "ar": "لوحة الاحتياجات"
+          },
+          "page": "get-involved"
+        },
+        {
+          "label": {
+            "en": "Events",
+            "es": "Eventos",
+            "ar": "الفعاليات"
+          },
+          "page": "events"
+        },
+        {
+          "label": {
+            "en": "Sponsor a child, family or seminarian",
+            "es": "Apadrina a un niño, una familia o un seminarista",
+            "ar": "اكفل طفلًا أو عائلة أو إكليريكيًا"
+          },
+          "page": "sponsor"
+        },
+        {
+          "label": {
+            "en": "Chapters and parishes",
+            "es": "Capítulos y parroquias",
+            "ar": "الفروع والرعايا"
+          },
+          "page": "chapters"
+        }
+      ]
+    },
+    {
+      "label": {
+        "en": "About",
+        "es": "Quiénes somos",
+        "ar": "من نحن"
+      },
+      "page": "about",
+      "children": [
+        {
+          "label": {
+            "en": "Our story",
+            "es": "Nuestra historia",
+            "ar": "قصتنا"
+          },
+          "page": "about"
+        },
+        {
+          "label": {
+            "en": "Board and staff",
+            "es": "Junta y equipo",
+            "ar": "مجلس الإدارة والفريق"
+          },
+          "page": "people"
+        },
+        {
+          "label": {
+            "en": "Financials and reports",
+            "es": "Finanzas e informes",
+            "ar": "التقارير المالية"
+          },
+          "page": "financials"
+        },
+        {
+          "label": {
+            "en": "Media and press kit",
+            "es": "Prensa y medios",
+            "ar": "الإعلام والصحافة"
+          },
+          "page": "press"
+        }
+      ]
+    },
+    {
+      "label": {
+        "en": "News",
+        "es": "Noticias",
+        "ar": "الأخبار"
+      },
+      "page": "news"
+    },
+    {
+      "label": {
+        "en": "Contact",
+        "es": "Contacto",
+        "ar": "اتصل بنا"
+      },
+      "page": "contact"
+    }
+  ],
+  "donateButton": {
+    "label": {
+      "en": "Donate",
+      "es": "Donar",
+      "ar": "تبرّع"
+    },
+    "page": "give"
+  },
+  "footer": {
+    "about": {
+      "en": "St. Example Orthodox Charity is a sample organization used to preview this website design. Replace this text with your own short description.",
+      "es": "Caridad Ortodoxa San Ejemplo es una organización de muestra para presentar este diseño. Sustituye este texto por tu propia descripción breve.",
+      "ar": "جمعية القديس المثال الخيرية الأرثوذكسية منظمة تجريبية لعرض هذا التصميم. استبدل هذا النص بوصف قصير لمنظمتك."
+    },
+    "columns": [
+      {
+        "heading": {
+          "en": "Give",
+          "es": "Dona",
+          "ar": "العطاء"
+        },
+        "links": [
+          {
+            "label": {
+              "en": "Give now",
+              "es": "Dona ahora",
+              "ar": "تبرّع الآن"
+            },
+            "page": "give"
+          },
+          {
+            "label": {
+              "en": "Campaigns",
+              "es": "Campañas",
+              "ar": "الحملات"
+            },
+            "page": "campaigns"
+          },
+          {
+            "label": {
+              "en": "Sponsorship",
+              "es": "Apadrinamiento",
+              "ar": "الكفالة"
+            },
+            "page": "sponsor"
+          },
+          {
+            "label": {
+              "en": "Monthly donors",
+              "es": "Donantes mensuales",
+              "ar": "المتبرعون الشهريون"
+            },
+            "page": "monthly-donors"
+          }
+        ]
+      },
+      {
+        "heading": {
+          "en": "Get involved",
+          "es": "Participa",
+          "ar": "شارك"
+        },
+        "links": [
+          {
+            "label": {
+              "en": "Needs board",
+              "es": "Tablón de necesidades",
+              "ar": "لوحة الاحتياجات"
+            },
+            "page": "get-involved"
+          },
+          {
+            "label": {
+              "en": "Events",
+              "es": "Eventos",
+              "ar": "الفعاليات"
+            },
+            "page": "events"
+          },
+          {
+            "label": {
+              "en": "Chapters and parishes",
+              "es": "Capítulos y parroquias",
+              "ar": "الفروع والرعايا"
+            },
+            "page": "chapters"
+          }
+        ]
+      },
+      {
+        "heading": {
+          "en": "About",
+          "es": "Quiénes somos",
+          "ar": "من نحن"
+        },
+        "links": [
+          {
+            "label": {
+              "en": "Our story",
+              "es": "Nuestra historia",
+              "ar": "قصتنا"
+            },
+            "page": "about"
+          },
+          {
+            "label": {
+              "en": "Financials",
+              "es": "Finanzas",
+              "ar": "المالية"
+            },
+            "page": "financials"
+          },
+          {
+            "label": {
+              "en": "Press kit",
+              "es": "Kit de prensa",
+              "ar": "الملف الصحفي"
+            },
+            "page": "press"
+          },
+          {
+            "label": {
+              "en": "Photo credits",
+              "es": "Créditos de fotos",
+              "ar": "مصادر الصور"
+            },
+            "page": "credits"
+          }
+        ]
+      }
+    ],
+    "legal": {
+      "en": "Sample organization. Replace with your legal name and registration details.",
+      "es": "Organización de muestra. Sustituye por tu nombre legal y datos de registro.",
+      "ar": "منظمة تجريبية. استبدل هذا باسمك القانوني وبيانات التسجيل."
+    }
+  },
+  "orthodoxConnect": {
+    "enabled": true,
+    "newsletter": true,
+    "baseUrl": "https://orthodoxconnect.example",
+    "organizationId": "st-example-charity",
+    "links": {
+      "volunteerSignup": "/org/{org}/volunteer?lang={lang}",
+      "postNeed": "/org/{org}/needs/new?lang={lang}",
+      "respondToNeed": "/org/{org}/needs/{id}?lang={lang}",
+      "eventRsvp": "/org/{org}/events/{id}/rsvp?lang={lang}",
+      "newsletterSignup": "/org/{org}/newsletter?email={email}&lang={lang}",
+      "donorPortal": "/org/{org}/giving/recurring?lang={lang}"
+    }
+  },
+  "giving": {
+    "paymentProvider": "none",
+    "connectedProviders": [],
+    "totalsEndpoint": "https://orthodoxconnect.example/api/giving/totals?fund={fundId}&provider={provider}",
+    "presetAmounts": [
+      25,
+      50,
+      100,
+      250
+    ],
+    "monthlyPresetAmounts": [
+      10,
+      25,
+      50,
+      100
+    ],
+    "funds": [
+      {
+        "fundId": "general-fund",
+        "name": {
+          "en": "Where it is needed most",
+          "es": "Donde más se necesite",
+          "ar": "حيث الحاجة أكبر"
+        }
+      },
+      {
+        "fundId": "winter-relief-2026",
+        "name": {
+          "en": "Warm Homes Winter Appeal",
+          "es": "Campaña de invierno Hogares Cálidos",
+          "ar": "نداء الشتاء: بيوت دافئة"
+        }
+      },
+      {
+        "fundId": "seminarian-scholarships",
+        "name": {
+          "en": "Seminarian scholarships",
+          "es": "Becas para seminaristas",
+          "ar": "منح الإكليريكيين"
+        }
+      },
+      {
+        "fundId": "church-repair-grants",
+        "name": {
+          "en": "Church repair grants",
+          "es": "Ayudas para reparar templos",
+          "ar": "منح ترميم الكنائس"
+        }
+      },
+      {
+        "fundId": "parish-pantries",
+        "name": {
+          "en": "Parish food pantries",
+          "es": "Despensas parroquiales",
+          "ar": "مخازن الطعام في الرعايا"
+        }
+      },
+      {
+        "fundId": "family-support",
+        "name": {
+          "en": "Family support",
+          "es": "Apoyo a familias",
+          "ar": "دعم العائلات"
+        }
+      },
+      {
+        "fundId": "youth-camps",
+        "name": {
+          "en": "Youth camps",
+          "es": "Campamentos juveniles",
+          "ar": "مخيمات الشباب"
+        }
+      }
+    ],
+    "taxReceiptNote": {
+      "en": "Sample note. Add your legal status and tax ID, and say how receipts are sent.",
+      "es": "Nota de muestra. Añade vuestra forma jurídica y número fiscal, y cómo se envían los recibos.",
+      "ar": "ملاحظة تجريبية. أضف الصفة القانونية والرقم الضريبي وطريقة إرسال الإيصالات."
+    }
+  },
+  "collections": {
+    "programs": "our-work",
+    "campaigns": "campaigns",
+    "stories": "news"
+  }
+}

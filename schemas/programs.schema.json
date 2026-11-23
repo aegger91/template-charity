@@ -1,0 +1,66 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Programs",
+  "type": "object",
+  "required": [
+    "items"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "slug",
+          "title",
+          "summary",
+          "body",
+          "image",
+          "fundId",
+          "locations"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "slug": {
+            "$ref": "common.schema.json#/$defs/slug"
+          },
+          "title": {
+            "$ref": "common.schema.json#/$defs/localized"
+          },
+          "summary": {
+            "$ref": "common.schema.json#/$defs/localized"
+          },
+          "body": {
+            "type": "array",
+            "items": {
+              "$ref": "common.schema.json#/$defs/localized"
+            }
+          },
+          "image": {
+            "$ref": "common.schema.json#/$defs/image"
+          },
+          "fundId": {
+            "$ref": "common.schema.json#/$defs/fundId"
+          },
+          "locations": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "Ids from locations.json"
+          },
+          "highlights": {
+            "type": "array",
+            "items": {
+              "$ref": "common.schema.json#/$defs/localized"
+            }
+          }
+        }
+      }
+    }
+  }
+}

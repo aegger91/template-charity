@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Interface text",
+  "description": "Labels used by components. Add a language by adding its code to each string.",
+  "type": "object",
+  "required": [
+    "strings"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "strings": {
+      "type": "object",
+      "additionalProperties": {
+        "$ref": "common.schema.json#/$defs/localized"
+      }
+    }
+  }
+}

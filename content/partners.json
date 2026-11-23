@@ -1,0 +1,11 @@
+{
+  "$schema": "../schemas/partners.schema.json",
+  "items": [
+    { "name": { "en": "Sample Diocese", "es": "Diócesis de muestra", "ar": "أبرشية تجريبية" }, "kind": { "en": "Church partner", "es": "Socio eclesial", "ar": "شريك كنسي" } },
+    { "name": { "en": "Sample Seminary", "es": "Seminario de muestra", "ar": "معهد إكليريكي تجريبي" }, "kind": { "en": "Education partner", "es": "Socio educativo", "ar": "شريك تعليمي" } },
+    { "name": { "en": "Sample Food Bank", "es": "Banco de alimentos de muestra", "ar": "بنك طعام تجريبي" }, "kind": { "en": "Food partner", "es": "Socio alimentario", "ar": "شريك غذائي" } },
+    { "name": { "en": "Sample Family Foundation", "es": "Fundación familiar de muestra", "ar": "مؤسسة عائلية تجريبية" }, "kind": { "en": "Funding partner", "es": "Socio financiador", "ar": "شريك تمويلي" } },
+    { "name": { "en": "Sample Camp Society", "es": "Sociedad de campamentos de muestra", "ar": "جمعية مخيمات تجريبية" }, "kind": { "en": "Youth partner", "es": "Socio juvenil", "ar": "شريك شبابي" } },
+    { "name": { "en": "Sample Brotherhood", "es": "Hermandad de muestra", "ar": "أخوية تجريبية" }, "kind": { "en": "Volunteer partner", "es": "Socio de voluntariado", "ar": "شريك تطوعي" } }
+  ]
+}

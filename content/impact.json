@@ -1,0 +1,26 @@
+{
+  "$schema": "../schemas/impact.schema.json",
+  "items": [
+    {
+      "id": "raised-this-year",
+      "label": { "en": "Given this year", "es": "Donado este año", "ar": "تبرعات هذا العام" },
+      "giving": { "fundId": "all-funds", "metric": "raised", "provider": "mock" }
+    },
+    {
+      "id": "donors-this-year",
+      "label": { "en": "Donors this year", "es": "Donantes este año", "ar": "متبرعو هذا العام" },
+      "giving": { "fundId": "all-funds", "metric": "donors", "provider": "mock" }
+    },
+    {
+      "id": "partner-parishes",
+      "label": { "en": "Partner parishes and chapters", "es": "Parroquias y capítulos asociados", "ar": "رعايا وفروع شريكة" },
+      "value": 40
+    },
+    {
+      "id": "pantry-days",
+      "label": { "en": "Pantry days held", "es": "Jornadas de despensa", "ar": "أيام توزيع الطعام" },
+      "value": 500,
+      "suffix": { "en": "+", "es": "+", "ar": "+" }
+    }
+  ]
+}

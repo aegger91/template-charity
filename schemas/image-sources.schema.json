@@ -1,0 +1,62 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Image sources",
+  "type": "object",
+  "required": [
+    "note",
+    "images"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "note": {
+      "$ref": "common.schema.json#/$defs/localized"
+    },
+    "images": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "file",
+          "title",
+          "author",
+          "date",
+          "license",
+          "licenseNote",
+          "source",
+          "description"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "file": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          },
+          "author": {
+            "type": "string"
+          },
+          "date": {
+            "type": "string"
+          },
+          "license": {
+            "type": "string"
+          },
+          "licenseNote": {
+            "type": "string"
+          },
+          "source": {
+            "type": "string",
+            "pattern": "^https://commons\\.wikimedia\\.org/"
+          },
+          "description": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

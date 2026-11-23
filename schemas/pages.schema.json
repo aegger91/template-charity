@@ -1,0 +1,91 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Pages",
+  "description": "Every page is an ordered list of sections. Reorder the array to reorder the page. Set enabled to false to hide a section. Add a page at any path.",
+  "type": "object",
+  "required": ["pages"],
+  "additionalProperties": false,
+  "properties": {
+    "$schema": { "type": "string" },
+    "pages": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "path", "title", "sections"],
+        "additionalProperties": false,
+        "properties": {
+          "id": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+          "path": { "type": "string", "pattern": "^([a-z0-9-]+(/[a-z0-9-]+)*)?$", "description": "URL path after the language, for example \"about/history\". Empty for the home page." },
+          "title": { "$ref": "common.schema.json#/$defs/localized" },
+          "description": { "$ref": "common.schema.json#/$defs/localized" },
+          "sections": { "type": "array", "items": { "$ref": "#/$defs/section" } }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "button": {
+      "type": "object",
+      "required": ["label"],
+      "properties": {
+        "label": { "$ref": "common.schema.json#/$defs/localized" },
+        "page": { "type": "string" },
+        "href": { "type": "string" }
+      }
+    },
+    "section": {
+      "type": "object",
+      "required": ["type"],
+      "properties": {
+        "type": {
+          "description": "Section layout. \"text\" is a generic block for an About or Mission statement with short placeholder copy; switch it on or off with enabled.",
+          "enum": [
+            "hero", "impact-stats", "page-header", "programs", "work-map", "stories", "campaigns", "call-to-action",
+            "giving-form", "sponsorship", "monthly-donors", "tax-receipt-note", "needs-board", "volunteer", "events",
+            "history", "blessing", "people", "financials", "partners", "press-kit", "chapters", "contact",
+            "image-credits", "text"
+          ]
+        },
+        "enabled": { "type": "boolean", "default": true },
+        "id": { "type": "string", "description": "Anchor id for in-page links." },
+        "eyebrow": { "$ref": "common.schema.json#/$defs/localized" },
+        "heading": { "$ref": "common.schema.json#/$defs/localized" },
+        "intro": { "$ref": "common.schema.json#/$defs/localized" },
+        "image": { "$ref": "common.schema.json#/$defs/image" },
+        "limit": { "type": "integer", "minimum": 1 },
+        "showAllLink": { "type": "boolean" },
+        "compact": { "type": "boolean" },
+        "showList": { "type": "boolean" },
+        "showCampaign": { "type": "boolean" },
+        "kind": { "enum": ["story", "news", "all"] },
+        "items": { "type": "array" },
+        "groups": { "type": "array", "items": { "type": "string" } },
+        "button": { "$ref": "#/$defs/button" },
+        "secondaryButton": { "$ref": "#/$defs/button" },
+        "roles": {
+          "type": "array",
+          "items": { "type": "object", "required": ["title", "body"], "properties": { "title": { "$ref": "common.schema.json#/$defs/localized" }, "body": { "$ref": "common.schema.json#/$defs/localized" } } }
+        },
+        "features": { "type": "array", "items": { "$ref": "common.schema.json#/$defs/localized" } },
+        "allocationHeading": { "$ref": "common.schema.json#/$defs/localized" },
+        "allocation": {
+          "type": "array",
+          "items": { "type": "object", "required": ["label", "percent"], "properties": { "label": { "$ref": "common.schema.json#/$defs/localized" }, "percent": { "type": "number", "minimum": 0, "maximum": 100 } } }
+        },
+        "boilerplate": { "$ref": "common.schema.json#/$defs/localized" },
+        "factSheet": { "type": "string" },
+        "pressEmail": { "type": "string" },
+        "body": { "type": "array", "items": { "$ref": "common.schema.json#/$defs/localized" } }
+      },
+      "additionalProperties": false,
+      "allOf": [
+        { "if": { "properties": { "type": { "const": "hero" } } }, "then": { "required": ["image"] } },
+        { "if": { "properties": { "type": { "const": "call-to-action" } } }, "then": { "required": ["heading", "button"] } },
+        { "if": { "properties": { "type": { "const": "history" } } }, "then": { "required": ["items"] } },
+        { "if": { "properties": { "type": { "const": "volunteer" } } }, "then": { "required": ["roles"] } },
+        { "if": { "properties": { "type": { "const": "press-kit" } } }, "then": { "required": ["boilerplate"] } },
+        { "if": { "properties": { "type": { "const": "text" } } }, "then": { "required": ["body"] } }
+      ]
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "$schema": "../schemas/chapters.schema.json",
+  "regions": {
+    "northeast": { "en": "Northeast", "es": "Noreste", "ar": "الشمال الشرقي" },
+    "midwest": { "en": "Midwest", "es": "Medio Oeste", "ar": "الغرب الأوسط" },
+    "south": { "en": "South", "es": "Sur", "ar": "الجنوب" },
+    "west": { "en": "West", "es": "Oeste", "ar": "الغرب" },
+    "international": { "en": "International", "es": "Internacional", "ar": "دولي" }
+  },
+  "items": [
+    { "name": { "en": "Sample Chapter North", "es": "Capítulo de muestra Norte", "ar": "الفرع التجريبي الشمالي" }, "type": "chapter", "city": { "en": "Sample City", "es": "Ciudad de Muestra", "ar": "مدينة النموذج" }, "region": "northeast", "country": { "en": "United States", "es": "Estados Unidos", "ar": "الولايات المتحدة" }, "email": "north@example.org" },
+    { "name": { "en": "Sample Partner Parish A", "es": "Parroquia asociada de muestra A", "ar": "رعية شريكة تجريبية أ" }, "type": "partner-parish", "city": { "en": "Example Falls", "es": "Example Falls", "ar": "إكزامبل فولز" }, "region": "northeast", "country": { "en": "United States", "es": "Estados Unidos", "ar": "الولايات المتحدة" }, "email": "parish-a@example.org" },
+    { "name": { "en": "Sample Chapter Lakeside", "es": "Capítulo de muestra Lakeside", "ar": "فرع ليكسايد التجريبي" }, "type": "chapter", "city": { "en": "Lakeside", "es": "Lakeside", "ar": "ليكسايد" }, "region": "midwest", "country": { "en": "United States", "es": "Estados Unidos", "ar": "الولايات المتحدة" }, "email": "lakeside@example.org" },
+    { "name": { "en": "Sample Partner Parish B", "es": "Parroquia asociada de muestra B", "ar": "رعية شريكة تجريبية ب" }, "type": "partner-parish", "city": { "en": "Prairie Town", "es": "Prairie Town", "ar": "براري تاون" }, "region": "midwest", "country": { "en": "United States", "es": "Estados Unidos", "ar": "الولايات المتحدة" }, "email": "parish-b@example.org" },
+    { "name": { "en": "Sample Chapter Gulf", "es": "Capítulo de muestra Golfo", "ar": "فرع الخليج التجريبي" }, "type": "chapter", "city": { "en": "Harbor City", "es": "Harbor City", "ar": "هاربر سيتي" }, "region": "south", "country": { "en": "United States", "es": "Estados Unidos", "ar": "الولايات المتحدة" }, "email": "gulf@example.org" },
+    { "name": { "en": "Sample Partner Parish C", "es": "Parroquia asociada de muestra C", "ar": "رعية شريكة تجريبية ج" }, "type": "partner-parish", "city": { "en": "Mesa Verde", "es": "Mesa Verde", "ar": "ميسا فيردي" }, "region": "west", "country": { "en": "United States", "es": "Estados Unidos", "ar": "الولايات المتحدة" }, "email": "parish-c@example.org" },
+    { "name": { "en": "Sample Chapter Pacific", "es": "Capítulo de muestra Pacífico", "ar": "فرع المحيط الهادئ التجريبي" }, "type": "chapter", "city": { "en": "Coast City", "es": "Coast City", "ar": "كوست سيتي" }, "region": "west", "country": { "en": "United States", "es": "Estados Unidos", "ar": "الولايات المتحدة" }, "email": "pacific@example.org" },
+    { "name": { "en": "Sample Partner Parish D", "es": "Parroquia asociada de muestra D", "ar": "رعية شريكة تجريبية د" }, "type": "partner-parish", "city": { "en": "Sample Village", "es": "Aldea de Muestra", "ar": "قرية النموذج" }, "region": "international", "country": { "en": "Sample country", "es": "País de muestra", "ar": "بلد تجريبي" }, "email": "parish-d@example.org" }
+  ]
+}

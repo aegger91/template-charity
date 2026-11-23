@@ -1,0 +1,54 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Where we work",
+  "description": "Map markers. Longitude and latitude in decimal degrees.",
+  "type": "object",
+  "required": [
+    "items"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "name",
+          "region",
+          "lon",
+          "lat",
+          "summary"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "$ref": "common.schema.json#/$defs/slug"
+          },
+          "name": {
+            "$ref": "common.schema.json#/$defs/localized"
+          },
+          "region": {
+            "$ref": "common.schema.json#/$defs/localized"
+          },
+          "lon": {
+            "type": "number",
+            "minimum": -180,
+            "maximum": 180
+          },
+          "lat": {
+            "type": "number",
+            "minimum": -90,
+            "maximum": 90
+          },
+          "summary": {
+            "$ref": "common.schema.json#/$defs/localized"
+          }
+        }
+      }
+    }
+  }
+}

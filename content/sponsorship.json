@@ -1,0 +1,55 @@
+{
+  "$schema": "../schemas/sponsorship.schema.json",
+  "note": {
+    "en": "Placeholder. Sponsorship profiles appear here once your organization sets this up.",
+    "es": "Marcador. Los perfiles de apadrinamiento aparecerán aquí cuando tu organización lo configure.",
+    "ar": "نص مؤقت. تظهر ملفات الكفالة هنا عندما تُعدّها منظمتك."
+  },
+  "options": [
+    {
+      "id": "child",
+      "title": {
+        "en": "Sponsor a child",
+        "es": "Apadrina a un niño",
+        "ar": "اكفل طفلًا"
+      },
+      "body": {
+        "en": "School supplies, a warm meal each day and a place at summer camp.",
+        "es": "Material escolar, una comida caliente al día y una plaza en el campamento de verano.",
+        "ar": "لوازم مدرسية ووجبة ساخنة يوميًا ومكان في المخيم الصيفي."
+      },
+      "monthlyAmount": 35,
+      "fundId": "sponsor-child"
+    },
+    {
+      "id": "family",
+      "title": {
+        "en": "Sponsor a family",
+        "es": "Apadrina a una familia",
+        "ar": "اكفل عائلة"
+      },
+      "body": {
+        "en": "Help with rent, heating and groceries while a family gets back on its feet.",
+        "es": "Ayuda con el alquiler, la calefacción y la compra mientras la familia se recupera.",
+        "ar": "مساعدة في الإيجار والتدفئة والطعام ريثما تستعيد العائلة استقرارها."
+      },
+      "monthlyAmount": 75,
+      "fundId": "sponsor-family"
+    },
+    {
+      "id": "seminarian",
+      "title": {
+        "en": "Sponsor a seminarian",
+        "es": "Apadrina a un seminarista",
+        "ar": "اكفل إكليريكيًا"
+      },
+      "body": {
+        "en": "Books, tuition and a modest stipend through the years of study.",
+        "es": "Libros, matrícula y una ayuda modesta durante los años de estudio.",
+        "ar": "كتب ورسوم دراسية ومنحة متواضعة خلال سنوات الدراسة."
+      },
+      "monthlyAmount": 100,
+      "fundId": "sponsor-seminarian"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Totals endpoint response",
+  "description": "What the placeholder endpoint in site.json giving.totalsEndpoint must return for one fund: the sum of successful, unrefunded payments tagged with that fundId.",
+  "type": "object",
+  "required": ["raised", "donors", "updatedAt"],
+  "additionalProperties": false,
+  "properties": {
+    "raised": { "type": "number", "minimum": 0, "description": "Whole units of the site currency." },
+    "donors": { "type": "integer", "minimum": 0, "description": "Distinct donors." },
+    "updatedAt": { "type": "string", "format": "date-time" }
+  },
+  "examples": [{ "raised": 18250, "donors": 214, "updatedAt": "2026-11-20T09:00:00Z" }]
+}

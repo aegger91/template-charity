@@ -1,0 +1,1097 @@
+{
+  "$schema": "../schemas/pages.schema.json",
+  "pages": [
+    {
+      "id": "home",
+      "path": "",
+      "title": {
+        "en": "Home",
+        "es": "Inicio",
+        "ar": "الرئيسية"
+      },
+      "sections": [
+        {
+          "type": "hero",
+          "enabled": true,
+          "eyebrow": {
+            "en": "An Orthodox charity",
+            "es": "Una obra benéfica ortodoxa",
+            "ar": "جمعية خيرية أرثوذكسية"
+          },
+          "image": {
+            "src": "/images/photos/monastery-lake.jpg",
+            "alt": {
+              "en": "A monastery with white walls and green domes on a lake island",
+              "es": "Un monasterio de muros blancos y cúpulas verdes en una isla del lago",
+              "ar": "دير بأسوار بيضاء وقباب خضراء على جزيرة في بحيرة"
+            },
+            "position": "50% 55%"
+          },
+          "secondaryButton": {
+            "label": {
+              "en": "See our work",
+              "es": "Conoce nuestra labor",
+              "ar": "تعرّف على عملنا"
+            },
+            "page": "our-work"
+          },
+          "showCampaign": true
+        },
+        {
+          "type": "impact-stats",
+          "enabled": true,
+          "heading": {
+            "en": "What your gifts do",
+            "es": "Lo que logran tus donativos",
+            "ar": "ما تصنعه تبرعاتك"
+          }
+        },
+        {
+          "type": "text",
+          "id": "mission",
+          "enabled": false,
+          "eyebrow": {
+            "en": "Our mission",
+            "es": "Nuestra misión",
+            "ar": "رسالتنا"
+          },
+          "heading": {
+            "en": "[Your mission in one sentence]",
+            "es": "[Vuestra misión en una frase]",
+            "ar": "[رسالتكم في جملة واحدة]"
+          },
+          "body": [
+            {
+              "en": "Sample text. One or two lines about who you are and who you serve.",
+              "es": "Texto de muestra. Una o dos líneas sobre quiénes sois y a quién servís.",
+              "ar": "نص تجريبي. سطر أو سطران عن هويتكم ومن تخدمون."
+            }
+          ]
+        },
+        {
+          "type": "programs",
+          "enabled": true,
+          "eyebrow": {
+            "en": "Our work",
+            "es": "Nuestra labor",
+            "ar": "عملنا"
+          },
+          "heading": {
+            "en": "Practical help, given through local parishes",
+            "es": "Ayuda práctica a través de las parroquias locales",
+            "ar": "مساعدة عملية تصل عبر الرعايا المحلية"
+          },
+          "intro": {
+            "en": "Sample text. One line about your programs.",
+            "es": "Texto de muestra. Una línea sobre vuestros programas.",
+            "ar": "نص تجريبي. سطر واحد عن برامجكم."
+          },
+          "limit": 3,
+          "showAllLink": true
+        },
+        {
+          "type": "work-map",
+          "enabled": true,
+          "eyebrow": {
+            "en": "Where we work",
+            "es": "Dónde trabajamos",
+            "ar": "أين نعمل"
+          },
+          "heading": {
+            "en": "Parishes near and far",
+            "es": "Parroquias cercanas y lejanas",
+            "ar": "رعايا قريبة وبعيدة"
+          },
+          "intro": {
+            "en": "Sample locations. Select a marker to see which programs run there.",
+            "es": "Ubicaciones de muestra. Selecciona un marcador para ver qué programas funcionan allí.",
+            "ar": "مواقع تجريبية. اختر علامة لترى البرامج القائمة هناك."
+          }
+        },
+        {
+          "type": "call-to-action",
+          "enabled": true,
+          "heading": {
+            "en": "Give in honor or memory of someone you love",
+            "es": "Dona en honor o en memoria de un ser querido",
+            "ar": "تبرّع تكريمًا لمن تحب أو إحياءً لذكراه"
+          },
+          "intro": {
+            "en": "We send a simple card to the family, by email or by post.",
+            "es": "Enviamos una tarjeta sencilla a la familia, por correo electrónico o postal.",
+            "ar": "نرسل بطاقة بسيطة إلى العائلة بالبريد الإلكتروني أو البريد العادي."
+          },
+          "button": {
+            "label": {
+              "en": "Give a tribute gift",
+              "es": "Hacer un donativo en homenaje",
+              "ar": "قدّم تبرعًا إهدائيًا"
+            },
+            "page": "give"
+          },
+          "image": {
+            "src": "/images/photos/korovniki-churches.jpg",
+            "alt": {
+              "en": "A church with green domes and a tall bell tower by a river",
+              "es": "Una iglesia de cúpulas verdes y un alto campanario junto a un río",
+              "ar": "كنيسة بقباب خضراء وبرج أجراس عالٍ قرب نهر"
+            }
+          }
+        },
+        {
+          "type": "stories",
+          "enabled": true,
+          "eyebrow": {
+            "en": "Stories",
+            "es": "Historias",
+            "ar": "قصص"
+          },
+          "heading": {
+            "en": "From the parishes",
+            "es": "Desde las parroquias",
+            "ar": "من الرعايا"
+          },
+          "limit": 3,
+          "showAllLink": true
+        },
+        {
+          "type": "needs-board",
+          "enabled": true,
+          "eyebrow": {
+            "en": "Needs board",
+            "es": "Tablón de necesidades",
+            "ar": "لوحة الاحتياجات"
+          },
+          "heading": {
+            "en": "Small ways to help this week",
+            "es": "Pequeñas formas de ayudar esta semana",
+            "ar": "طرق بسيطة للمساعدة هذا الأسبوع"
+          },
+          "limit": 3,
+          "compact": true
+        },
+        {
+          "type": "events",
+          "enabled": true,
+          "eyebrow": {
+            "en": "Events",
+            "es": "Eventos",
+            "ar": "الفعاليات"
+          },
+          "heading": {
+            "en": "Come and see",
+            "es": "Ven y verás",
+            "ar": "تعالَ وانظر"
+          },
+          "limit": 3
+        },
+        {
+          "type": "partners",
+          "enabled": true,
+          "heading": {
+            "en": "Working alongside",
+            "es": "Trabajamos junto a",
+            "ar": "نعمل جنبًا إلى جنب مع"
+          }
+        }
+      ]
+    },
+    {
+      "id": "our-work",
+      "path": "our-work",
+      "title": {
+        "en": "Our work",
+        "es": "Nuestra labor",
+        "ar": "عملنا"
+      },
+      "description": {
+        "en": "Programs run with local Orthodox parishes.",
+        "es": "Programas con parroquias ortodoxas locales.",
+        "ar": "برامج تُدار مع الرعايا الأرثوذكسية المحلية."
+      },
+      "sections": [
+        {
+          "type": "page-header",
+          "enabled": true,
+          "eyebrow": {
+            "en": "Our work",
+            "es": "Nuestra labor",
+            "ar": "عملنا"
+          },
+          "heading": {
+            "en": "Our work",
+            "es": "Nuestra labor",
+            "ar": "عملنا"
+          },
+          "intro": {
+            "en": "Sample text. One or two lines about your work.",
+            "es": "Texto de muestra. Una o dos líneas sobre vuestra labor.",
+            "ar": "نص تجريبي. سطر أو سطران عن عملكم."
+          }
+        },
+        {
+          "type": "programs",
+          "enabled": true,
+          "heading": {
+            "en": "Programs",
+            "es": "Programas",
+            "ar": "البرامج"
+          }
+        },
+        {
+          "type": "work-map",
+          "enabled": true,
+          "heading": {
+            "en": "Where we work",
+            "es": "Dónde trabajamos",
+            "ar": "أين نعمل"
+          },
+          "intro": {
+            "en": "Sample locations. Select a marker to see which programs run there.",
+            "es": "Ubicaciones de muestra. Selecciona un marcador para ver qué programas funcionan allí.",
+            "ar": "مواقع تجريبية. اختر علامة لترى البرامج القائمة هناك."
+          }
+        },
+        {
+          "type": "stories",
+          "enabled": true,
+          "heading": {
+            "en": "Stories",
+            "es": "Historias",
+            "ar": "قصص"
+          },
+          "kind": "story",
+          "limit": 3,
+          "showAllLink": true
+        }
+      ]
+    },
+    {
+      "id": "where-we-work",
+      "path": "our-work/where-we-work",
+      "title": {
+        "en": "Where we work",
+        "es": "Dónde trabajamos",
+        "ar": "أين نعمل"
+      },
+      "sections": [
+        {
+          "type": "page-header",
+          "enabled": true,
+          "eyebrow": {
+            "en": "Where we work",
+            "es": "Dónde trabajamos",
+            "ar": "أين نعمل"
+          },
+          "heading": {
+            "en": "Five sample places, one way of working",
+            "es": "Cinco lugares de muestra, una misma forma de trabajar",
+            "ar": "خمسة مواقع تجريبية وأسلوب عمل واحد"
+          },
+          "intro": {
+            "en": "Replace these markers with the places your organization serves.",
+            "es": "Sustituye estos marcadores por los lugares donde trabaja tu organización.",
+            "ar": "استبدل هذه العلامات بالأماكن التي تخدمها منظمتك."
+          }
+        },
+        {
+          "type": "work-map",
+          "enabled": true,
+          "showList": true
+        }
+      ]
+    },
+    {
+      "id": "campaigns",
+      "path": "campaigns",
+      "title": {
+        "en": "Campaigns and appeals",
+        "es": "Campañas y llamamientos",
+        "ar": "الحملات والنداءات"
+      },
+      "sections": [
+        {
+          "type": "page-header",
+          "enabled": true,
+          "eyebrow": {
+            "en": "Campaigns",
+            "es": "Campañas",
+            "ar": "الحملات"
+          },
+          "heading": {
+            "en": "Campaigns and appeals",
+            "es": "Campañas y llamamientos",
+            "ar": "الحملات والنداءات"
+          },
+          "intro": {
+            "en": "Each appeal has one goal, one deadline and its own fund, so every gift goes where you meant it to.",
+            "es": "Cada campaña tiene una meta, una fecha límite y su propio fondo, para que cada donativo llegue a donde quieres.",
+            "ar": "لكل نداء هدف واحد وموعد نهائي وصندوق خاص، ليصل كل تبرع إلى حيث قصدت."
+          }
+        },
+        {
+          "type": "campaigns",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "id": "give",
+      "path": "give",
+      "title": {
+        "en": "Give",
+        "es": "Dona",
+        "ar": "تبرّع"
+      },
+      "sections": [
+        {
+          "type": "page-header",
+          "enabled": true,
+          "eyebrow": {
+            "en": "Give",
+            "es": "Dona",
+            "ar": "تبرّع"
+          },
+          "heading": {
+            "en": "Your gift, where you choose",
+            "es": "Tu donativo, a donde tú elijas",
+            "ar": "تبرعك إلى حيث تختار"
+          },
+          "intro": {
+            "en": "Give once or every month, to a campaign, a program or wherever the need is greatest.",
+            "es": "Dona una vez o cada mes, a una campaña, a un programa o a donde más se necesite.",
+            "ar": "تبرّع مرة واحدة أو كل شهر، لحملة أو برنامج أو حيث الحاجة أكبر."
+          }
+        },
+        {
+          "type": "giving-form",
+          "enabled": true
+        },
+        {
+          "type": "sponsorship",
+          "enabled": true,
+          "eyebrow": {
+            "en": "Sponsorship",
+            "es": "Apadrinamiento",
+            "ar": "الكفالة"
+          },
+          "heading": {
+            "en": "Sponsor a child, a family or a seminarian",
+            "es": "Apadrina a un niño, una familia o un seminarista",
+            "ar": "اكفل طفلًا أو عائلة أو إكليريكيًا"
+          },
+          "compact": true
+        },
+        {
+          "type": "tax-receipt-note",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "id": "sponsor",
+      "path": "give/sponsor",
+      "title": {
+        "en": "Sponsorship",
+        "es": "Apadrinamiento",
+        "ar": "الكفالة"
+      },
+      "sections": [
+        {
+          "type": "page-header",
+          "enabled": true,
+          "eyebrow": {
+            "en": "Sponsorship",
+            "es": "Apadrinamiento",
+            "ar": "الكفالة"
+          },
+          "heading": {
+            "en": "Sponsor a child, a family or a seminarian",
+            "es": "Apadrina a un niño, una familia o un seminarista",
+            "ar": "اكفل طفلًا أو عائلة أو إكليريكيًا"
+          },
+          "intro": {
+            "en": "Sample text. One line about how sponsorship works at your organization.",
+            "es": "Texto de muestra. Una línea sobre el apadrinamiento en vuestra organización.",
+            "ar": "نص تجريبي. سطر واحد عن الكفالة في منظمتكم."
+          }
+        },
+        {
+          "type": "sponsorship",
+          "enabled": true
+        },
+        {
+          "type": "tax-receipt-note",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "id": "monthly-donors",
+      "path": "give/monthly-donors",
+      "title": {
+        "en": "Monthly donors",
+        "es": "Donantes mensuales",
+        "ar": "المتبرعون الشهريون"
+      },
+      "sections": [
+        {
+          "type": "page-header",
+          "enabled": true,
+          "eyebrow": {
+            "en": "Monthly donors",
+            "es": "Donantes mensuales",
+            "ar": "المتبرعون الشهريون"
+          },
+          "heading": {
+            "en": "Thank you for giving every month",
+            "es": "Gracias por donar cada mes",
+            "ar": "شكرًا لعطائك كل شهر"
+          },
+          "intro": {
+            "en": "Sample text. One line thanking monthly donors.",
+            "es": "Texto de muestra. Una línea de agradecimiento a quienes donan cada mes.",
+            "ar": "نص تجريبي. سطر واحد لشكر المتبرعين الشهريين."
+          }
+        },
+        {
+          "type": "monthly-donors",
+          "enabled": true,
+          "features": [
+            {
+              "en": "Update your card or bank details",
+              "es": "Actualiza tu tarjeta o datos bancarios",
+              "ar": "حدّث بيانات بطاقتك أو حسابك المصرفي"
+            },
+            {
+              "en": "Change the amount or pause for a month",
+              "es": "Cambia el importe o pausa un mes",
+              "ar": "غيّر المبلغ أو أوقف التبرع لشهر"
+            },
+            {
+              "en": "Download receipts and your yearly summary",
+              "es": "Descarga recibos y tu resumen anual",
+              "ar": "نزّل الإيصالات وملخصك السنوي"
+            }
+          ]
+        },
+        {
+          "type": "tax-receipt-note",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "id": "get-involved",
+      "path": "get-involved",
+      "title": {
+        "en": "Get involved",
+        "es": "Participa",
+        "ar": "شارك معنا"
+      },
+      "sections": [
+        {
+          "type": "page-header",
+          "enabled": true,
+          "eyebrow": {
+            "en": "Get involved",
+            "es": "Participa",
+            "ar": "شارك معنا"
+          },
+          "heading": {
+            "en": "Needs board and volunteering",
+            "es": "Tablón de necesidades y voluntariado",
+            "ar": "لوحة الاحتياجات والتطوع"
+          },
+          "intro": {
+            "en": "Real needs posted by parishes and chapters. Answer one, or post your own, through OrthodoxConnect.",
+            "es": "Necesidades publicadas por parroquias y capítulos. Responde a una o publica la tuya a través de OrthodoxConnect.",
+            "ar": "احتياجات تنشرها الرعايا والفروع. استجب لأحدها أو أضف احتياجك عبر OrthodoxConnect."
+          }
+        },
+        {
+          "type": "needs-board",
+          "enabled": true
+        },
+        {
+          "type": "volunteer",
+          "enabled": true,
+          "eyebrow": {
+            "en": "Volunteer",
+            "es": "Voluntariado",
+            "ar": "التطوع"
+          },
+          "heading": {
+            "en": "Give an evening a month",
+            "es": "Dedica una tarde al mes",
+            "ar": "خصّص أمسية واحدة في الشهر"
+          },
+          "intro": {
+            "en": "Pick a role that fits your week. We will match you with a nearby team.",
+            "es": "Elige una tarea que encaje en tu semana. Te pondremos en contacto con un equipo cercano.",
+            "ar": "اختر دورًا يناسب أسبوعك، وسنربطك بفريق قريب منك."
+          },
+          "roles": [
+            {
+              "title": {
+                "en": "Pantry helper",
+                "es": "Ayudante de despensa",
+                "ar": "مساعد في مخزن الطعام"
+              },
+              "body": {
+                "en": "Sort, stock and welcome guests on pantry days.",
+                "es": "Ordena, repone y recibe a los invitados en los días de despensa.",
+                "ar": "فرز الطعام وترتيبه واستقبال الضيوف في أيام التوزيع."
+              }
+            },
+            {
+              "title": {
+                "en": "Driver",
+                "es": "Conductor",
+                "ar": "سائق"
+              },
+              "body": {
+                "en": "Deliver food and fuel, or drive someone to services.",
+                "es": "Reparte comida y combustible o lleva a alguien a los oficios.",
+                "ar": "توصيل الطعام والوقود أو إيصال شخص إلى الصلوات."
+              }
+            },
+            {
+              "title": {
+                "en": "Visitor",
+                "es": "Visitador",
+                "ar": "زائر"
+              },
+              "body": {
+                "en": "Spend an hour a week with someone who is homebound.",
+                "es": "Pasa una hora a la semana con alguien que no puede salir de casa.",
+                "ar": "اقضِ ساعة أسبوعيًا مع شخص لا يغادر بيته."
+              }
+            },
+            {
+              "title": {
+                "en": "Skills volunteer",
+                "es": "Voluntariado profesional",
+                "ar": "متطوع بخبرة مهنية"
+              },
+              "body": {
+                "en": "Help with paperwork, repairs, translation or accounts.",
+                "es": "Ayuda con trámites, reparaciones, traducción o cuentas.",
+                "ar": "المساعدة في الأوراق أو الإصلاحات أو الترجمة أو الحسابات."
+              }
+            }
+          ]
+        },
+        {
+          "type": "call-to-action",
+          "enabled": true,
+          "heading": {
+            "en": "Find a chapter near you",
+            "es": "Encuentra un capítulo cerca de ti",
+            "ar": "ابحث عن فرع قريب منك"
+          },
+          "intro": {
+            "en": "Sample text. One line inviting people to join a local group.",
+            "es": "Texto de muestra. Una línea que invite a unirse a un grupo local.",
+            "ar": "نص تجريبي. سطر واحد يدعو للانضمام إلى مجموعة محلية."
+          },
+          "button": {
+            "label": {
+              "en": "See chapters",
+              "es": "Ver capítulos",
+              "ar": "تصفّح الفروع"
+            },
+            "page": "chapters"
+          }
+        }
+      ]
+    },
+    {
+      "id": "events",
+      "path": "get-involved/events",
+      "title": {
+        "en": "Events",
+        "es": "Eventos",
+        "ar": "الفعاليات"
+      },
+      "sections": [
+        {
+          "type": "page-header",
+          "enabled": true,
+          "eyebrow": {
+            "en": "Events",
+            "es": "Eventos",
+            "ar": "الفعاليات"
+          },
+          "heading": {
+            "en": "Gatherings, retreats and benefits",
+            "es": "Encuentros, retiros y galas benéficas",
+            "ar": "لقاءات ورياضات روحية وحفلات خيرية"
+          },
+          "intro": {
+            "en": "RSVP through OrthodoxConnect so we can plan food and seating.",
+            "es": "Confirma tu asistencia en OrthodoxConnect para que podamos prever comida y asientos.",
+            "ar": "أكّد حضورك عبر OrthodoxConnect لنتمكن من تجهيز الطعام والمقاعد."
+          }
+        },
+        {
+          "type": "events",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "id": "chapters",
+      "path": "get-involved/chapters",
+      "title": {
+        "en": "Chapters and partner parishes",
+        "es": "Capítulos y parroquias asociadas",
+        "ar": "الفروع والرعايا الشريكة"
+      },
+      "sections": [
+        {
+          "type": "page-header",
+          "enabled": true,
+          "eyebrow": {
+            "en": "Directory",
+            "es": "Directorio",
+            "ar": "الدليل"
+          },
+          "heading": {
+            "en": "Chapters and partner parishes",
+            "es": "Capítulos y parroquias asociadas",
+            "ar": "الفروع والرعايا الشريكة"
+          },
+          "intro": {
+            "en": "Find a group near you. All entries below are samples.",
+            "es": "Encuentra un grupo cerca de ti. Todas las entradas son de muestra.",
+            "ar": "ابحث عن مجموعة قريبة منك. كل الإدخالات أدناه تجريبية."
+          }
+        },
+        {
+          "type": "chapters",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "id": "about",
+      "path": "about",
+      "title": {
+        "en": "About",
+        "es": "Quiénes somos",
+        "ar": "من نحن"
+      },
+      "sections": [
+        {
+          "type": "page-header",
+          "enabled": true,
+          "eyebrow": {
+            "en": "About us",
+            "es": "Quiénes somos",
+            "ar": "من نحن"
+          },
+          "heading": {
+            "en": "About us",
+            "es": "Quiénes somos",
+            "ar": "من نحن"
+          },
+          "intro": {
+            "en": "Sample text. One or two lines about your organization.",
+            "es": "Texto de muestra. Una o dos líneas sobre vuestra organización.",
+            "ar": "نص تجريبي. سطر أو سطران عن منظمتكم."
+          },
+          "image": {
+            "src": "/images/photos/river-town.jpg",
+            "alt": {
+              "en": "A river town with churches seen from a hill",
+              "es": "Una ciudad junto al río con iglesias, vista desde una colina",
+              "ar": "بلدة نهرية بكنائسها تُرى من تلة"
+            }
+          }
+        },
+        {
+          "type": "text",
+          "id": "mission",
+          "enabled": true,
+          "eyebrow": {
+            "en": "Our mission",
+            "es": "Nuestra misión",
+            "ar": "رسالتنا"
+          },
+          "heading": {
+            "en": "[Your mission in one sentence]",
+            "es": "[Vuestra misión en una frase]",
+            "ar": "[رسالتكم في جملة واحدة]"
+          },
+          "body": [
+            {
+              "en": "Sample text. One or two lines about who you are and who you serve.",
+              "es": "Texto de muestra. Una o dos líneas sobre quiénes sois y a quién servís.",
+              "ar": "نص تجريبي. سطر أو سطران عن هويتكم ومن تخدمون."
+            }
+          ]
+        },
+        {
+          "type": "history",
+          "enabled": true,
+          "eyebrow": {
+            "en": "Our story",
+            "es": "Nuestra historia",
+            "ar": "قصتنا"
+          },
+          "heading": {
+            "en": "Our history",
+            "es": "Nuestra historia",
+            "ar": "تاريخنا"
+          },
+          "items": [
+            {
+              "label": {
+                "en": "[Year]",
+                "es": "[Año]",
+                "ar": "[السنة]"
+              },
+              "title": {
+                "en": "[Milestone]",
+                "es": "[Hito]",
+                "ar": "[محطة]"
+              },
+              "body": {
+                "en": "Sample text. One line about this milestone.",
+                "es": "Texto de muestra. Una línea sobre este hito.",
+                "ar": "نص تجريبي. سطر واحد عن هذه المحطة."
+              }
+            },
+            {
+              "label": {
+                "en": "[Year]",
+                "es": "[Año]",
+                "ar": "[السنة]"
+              },
+              "title": {
+                "en": "[Milestone]",
+                "es": "[Hito]",
+                "ar": "[محطة]"
+              },
+              "body": {
+                "en": "Sample text. One line about this milestone.",
+                "es": "Texto de muestra. Una línea sobre este hito.",
+                "ar": "نص تجريبي. سطر واحد عن هذه المحطة."
+              }
+            },
+            {
+              "label": {
+                "en": "[Year]",
+                "es": "[Año]",
+                "ar": "[السنة]"
+              },
+              "title": {
+                "en": "[Milestone]",
+                "es": "[Hito]",
+                "ar": "[محطة]"
+              },
+              "body": {
+                "en": "Sample text. One line about this milestone.",
+                "es": "Texto de muestra. Una línea sobre este hito.",
+                "ar": "نص تجريبي. سطر واحد عن هذه المحطة."
+              }
+            }
+          ]
+        },
+        {
+          "type": "blessing",
+          "enabled": true,
+          "heading": {
+            "en": "Spiritual oversight",
+            "es": "Acompañamiento espiritual",
+            "ar": "الإشراف الروحي"
+          }
+        },
+        {
+          "type": "people",
+          "enabled": true,
+          "heading": {
+            "en": "Board and staff",
+            "es": "Junta y equipo",
+            "ar": "مجلس الإدارة والفريق"
+          }
+        },
+        {
+          "type": "financials",
+          "enabled": true,
+          "heading": {
+            "en": "Financials and annual reports",
+            "es": "Finanzas e informes anuales",
+            "ar": "التقارير المالية والسنوية"
+          }
+        },
+        {
+          "type": "partners",
+          "enabled": true,
+          "heading": {
+            "en": "Partners",
+            "es": "Socios",
+            "ar": "الشركاء"
+          }
+        }
+      ]
+    },
+    {
+      "id": "people",
+      "path": "about/people",
+      "title": {
+        "en": "Board and staff",
+        "es": "Junta y equipo",
+        "ar": "مجلس الإدارة والفريق"
+      },
+      "sections": [
+        {
+          "type": "page-header",
+          "enabled": true,
+          "eyebrow": {
+            "en": "About us",
+            "es": "Quiénes somos",
+            "ar": "من نحن"
+          },
+          "heading": {
+            "en": "Board and staff",
+            "es": "Junta y equipo",
+            "ar": "مجلس الإدارة والفريق"
+          },
+          "intro": {
+            "en": "Placeholders. Add real names and photos only with each person's consent.",
+            "es": "Marcadores de posición. Añade nombres y fotos reales solo con el consentimiento de cada persona.",
+            "ar": "عناصر مؤقتة. أضف الأسماء والصور الحقيقية بموافقة أصحابها فقط."
+          }
+        },
+        {
+          "type": "blessing",
+          "enabled": true,
+          "heading": {
+            "en": "Spiritual oversight",
+            "es": "Acompañamiento espiritual",
+            "ar": "الإشراف الروحي"
+          }
+        },
+        {
+          "type": "people",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "id": "financials",
+      "path": "about/financials",
+      "title": {
+        "en": "Financials and reports",
+        "es": "Finanzas e informes",
+        "ar": "التقارير المالية"
+      },
+      "sections": [
+        {
+          "type": "page-header",
+          "enabled": true,
+          "eyebrow": {
+            "en": "Accountability",
+            "es": "Rendición de cuentas",
+            "ar": "المساءلة"
+          },
+          "heading": {
+            "en": "Financials and annual reports",
+            "es": "Finanzas e informes anuales",
+            "ar": "التقارير المالية والسنوية"
+          },
+          "intro": {
+            "en": "Where the money goes, in plain numbers. All files below are samples.",
+            "es": "A dónde va el dinero, con cifras claras. Todos los archivos son de muestra.",
+            "ar": "أين تذهب الأموال بأرقام واضحة. كل الملفات أدناه تجريبية."
+          }
+        },
+        {
+          "type": "financials",
+          "enabled": true,
+          "allocationHeading": {
+            "en": "How each gift is used",
+            "es": "Cómo se usa cada donativo",
+            "ar": "كيف يُستخدم كل تبرع"
+          },
+          "allocation": [
+            {
+              "label": {
+                "en": "Programs",
+                "es": "Programas",
+                "ar": "البرامج"
+              },
+              "percent": 82
+            },
+            {
+              "label": {
+                "en": "Administration",
+                "es": "Administración",
+                "ar": "الإدارة"
+              },
+              "percent": 11
+            },
+            {
+              "label": {
+                "en": "Fundraising",
+                "es": "Captación de fondos",
+                "ar": "جمع التبرعات"
+              },
+              "percent": 7
+            }
+          ]
+        },
+        {
+          "type": "tax-receipt-note",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "id": "news",
+      "path": "news",
+      "title": {
+        "en": "News and stories",
+        "es": "Noticias e historias",
+        "ar": "الأخبار والقصص"
+      },
+      "sections": [
+        {
+          "type": "page-header",
+          "enabled": true,
+          "eyebrow": {
+            "en": "News",
+            "es": "Noticias",
+            "ar": "الأخبار"
+          },
+          "heading": {
+            "en": "News and stories",
+            "es": "Noticias e historias",
+            "ar": "الأخبار والقصص"
+          },
+          "intro": {
+            "en": "Short accounts from the parishes we serve with. All items are samples.",
+            "es": "Relatos breves de las parroquias con las que servimos. Todo es de muestra.",
+            "ar": "روايات قصيرة من الرعايا التي نخدم معها. كل المواد تجريبية."
+          }
+        },
+        {
+          "type": "stories",
+          "enabled": true,
+          "kind": "all"
+        }
+      ]
+    },
+    {
+      "id": "press",
+      "path": "about/press",
+      "title": {
+        "en": "Media and press kit",
+        "es": "Prensa y medios",
+        "ar": "الإعلام والملف الصحفي"
+      },
+      "sections": [
+        {
+          "type": "page-header",
+          "enabled": true,
+          "eyebrow": {
+            "en": "Media",
+            "es": "Medios",
+            "ar": "الإعلام"
+          },
+          "heading": {
+            "en": "Media and press kit",
+            "es": "Prensa y kit de medios",
+            "ar": "الإعلام والملف الصحفي"
+          },
+          "intro": {
+            "en": "Logos, colors, photos and a short description you can quote.",
+            "es": "Logotipos, colores, fotos y una descripción breve que puedes citar.",
+            "ar": "شعارات وألوان وصور ووصف قصير يمكنك الاقتباس منه."
+          }
+        },
+        {
+          "type": "press-kit",
+          "enabled": true,
+          "boilerplate": {
+            "en": "St. Example Orthodox Charity is a sample organization. Replace this with a two-line description reporters can quote.",
+            "es": "Caridad Ortodoxa San Ejemplo es una organización de muestra. Sustituye esto por una descripción de dos líneas que la prensa pueda citar.",
+            "ar": "جمعية القديس المثال الخيرية الأرثوذكسية منظمة تجريبية. استبدل هذا بوصف من سطرين يمكن للصحافة اقتباسه."
+          },
+          "factSheet": "/downloads/sample-fact-sheet.pdf",
+          "pressEmail": "press@example.org"
+        }
+      ]
+    },
+    {
+      "id": "contact",
+      "path": "contact",
+      "title": {
+        "en": "Contact",
+        "es": "Contacto",
+        "ar": "اتصل بنا"
+      },
+      "sections": [
+        {
+          "type": "page-header",
+          "enabled": true,
+          "eyebrow": {
+            "en": "Contact",
+            "es": "Contacto",
+            "ar": "اتصل بنا"
+          },
+          "heading": {
+            "en": "Write to us",
+            "es": "Escríbenos",
+            "ar": "راسلنا"
+          },
+          "intro": {
+            "en": "We answer within two working days.",
+            "es": "Respondemos en un plazo de dos días laborables.",
+            "ar": "نرد خلال يومي عمل."
+          }
+        },
+        {
+          "type": "contact",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "id": "credits",
+      "path": "credits",
+      "title": {
+        "en": "Photo credits",
+        "es": "Créditos de fotos",
+        "ar": "مصادر الصور"
+      },
+      "sections": [
+        {
+          "type": "page-header",
+          "enabled": true,
+          "eyebrow": {
+            "en": "Credits",
+            "es": "Créditos",
+            "ar": "المصادر"
+          },
+          "heading": {
+            "en": "Photo credits",
+            "es": "Créditos de fotos",
+            "ar": "مصادر الصور"
+          },
+          "intro": {
+            "en": "Every photograph here is a public domain archival image, used as a placeholder.",
+            "es": "Todas las fotografías son imágenes de archivo de dominio público, usadas como marcador de posición.",
+            "ar": "كل الصور هنا صور أرشيفية في الملكية العامة، مستخدمة كعناصر مؤقتة."
+          }
+        },
+        {
+          "type": "image-credits",
+          "enabled": true
+        }
+      ]
+    }
+  ]
+}

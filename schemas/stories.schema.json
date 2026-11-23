@@ -1,0 +1,61 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "News and stories",
+  "type": "object",
+  "required": [
+    "items"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "slug",
+          "title",
+          "kind",
+          "date",
+          "summary",
+          "body"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "slug": {
+            "$ref": "common.schema.json#/$defs/slug"
+          },
+          "title": {
+            "$ref": "common.schema.json#/$defs/localized"
+          },
+          "kind": {
+            "enum": [
+              "story",
+              "news"
+            ]
+          },
+          "date": {
+            "$ref": "common.schema.json#/$defs/date"
+          },
+          "summary": {
+            "$ref": "common.schema.json#/$defs/localized"
+          },
+          "body": {
+            "type": "array",
+            "items": {
+              "$ref": "common.schema.json#/$defs/localized"
+            }
+          },
+          "image": {
+            "$ref": "common.schema.json#/$defs/image"
+          },
+          "program": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

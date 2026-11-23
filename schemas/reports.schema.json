@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Financials and reports",
+  "type": "object",
+  "required": [
+    "items"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "title",
+          "year",
+          "kind",
+          "file",
+          "sizeKb"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "title": {
+            "$ref": "common.schema.json#/$defs/localized"
+          },
+          "year": {
+            "type": "integer"
+          },
+          "kind": {
+            "enum": [
+              "annual-report",
+              "financial-statement",
+              "tax-filing",
+              "letter"
+            ]
+          },
+          "file": {
+            "type": "string",
+            "pattern": "\\.pdf$"
+          },
+          "sizeKb": {
+            "type": "number",
+            "minimum": 0
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "$schema": "../schemas/image-sources.schema.json",
+  "note": "Every photograph in this template is a public domain archival image from Wikimedia Commons. Replace them with your own photos before launch.",
+  "images": [
+    {
+      "file": "/images/photos/church-st-nicholas.jpg",
+      "title": "Church of St. Nicholas Pensky (Prokudin-Gorsky) 01.jpg",
+      "author": "Sergei Mikhailovich Prokudin-Gorsky (1863 to 1944)",
+      "date": "1911",
+      "license": "PD-old-auto-expired",
+      "licenseNote": "Public domain (PD-old). The author died more than 70 years ago.",
+      "source": "https://commons.wikimedia.org/wiki/File:Church_of_St._Nicholas_Pensky_(Prokudin-Gorsky)_01.jpg",
+      "description": "Church of St. Nicholas Pensky (the winter church of the Church of the Fyodorovskaya Mother of God). Yaroslavl, 1911"
+    },
+    {
+      "file": "/images/photos/monastery-lake.jpg",
+      "title": "Prokudin-Gorskii-09-edit2.jpg",
+      "author": "Sergei Mikhailovich Prokudin-Gorsky (1863 to 1944)",
+      "date": "1910",
+      "license": "PD-old-auto-expired",
+      "licenseNote": "Public domain (PD-old). The author died more than 70 years ago.",
+      "source": "https://commons.wikimedia.org/wiki/File:Prokudin-Gorskii-09-edit2.jpg",
+      "description": "Early color photograph from Russia, created by Sergei Mikhailovich Prokudin-Gorskii as part of his work to document the Russian Empire from 1909 to 1915. The M"
+    },
+    {
+      "file": "/images/photos/wooden-house.jpg",
+      "title": "Russian peasant girls in front of a traditional wooden house in Kirillov.jpg",
+      "author": "Sergei Mikhailovich Prokudin-Gorsky (1863 to 1944)",
+      "date": "1909",
+      "license": "PD-old-auto-1923",
+      "licenseNote": "Public domain (PD-old). The author died more than 70 years ago.",
+      "source": "https://commons.wikimedia.org/wiki/File:Russian_peasant_girls_in_front_of_a_traditional_wooden_house_in_Kirillov.jpg",
+      "description": "Young Russian peasant women in front of traditional wooden house, in a rural area along the Sheksna River near the small town of Kirillov. Early color photograp"
+    },
+    {
+      "file": "/images/photos/spinning-yarn.jpg",
+      "title": "Sergei Prokudin-Gorskii, Spinning yarn in the village of Izvedovo, 1910.jpg",
+      "author": "Sergei Mikhailovich Prokudin-Gorsky (1863 to 1944)",
+      "date": "1910",
+      "license": "PD-old-auto-expired",
+      "licenseNote": "Public domain (PD-old). The author died more than 70 years ago.",
+      "source": "https://commons.wikimedia.org/wiki/File:Sergei_Prokudin-Gorskii,_Spinning_yarn_in_the_village_of_Izvedovo,_1910.jpg",
+      "description": "Sixteenth in the series of digital renderings of early color separation photographs by Sergei Prokudin-Gorskii. From the album Views along the upper Volga River"
+    },
+    {
+      "file": "/images/photos/harvested-field.jpg",
+      "title": "Прокудин-Горский. Сжатое поле 1912 год.jpg",
+      "author": "Sergei Mikhailovich Prokudin-Gorsky (1863 to 1944)",
+      "date": "1912",
+      "license": "PD-old-auto-expired",
+      "licenseNote": "Public domain (PD-old). The author died more than 70 years ago.",
+      "source": "https://commons.wikimedia.org/wiki/File:%D0%9F%D1%80%D0%BE%D0%BA%D1%83%D0%B4%D0%B8%D0%BD-%D0%93%D0%BE%D1%80%D1%81%D0%BA%D0%B8%D0%B9._%D0%A1%D0%B6%D0%B0%D1%82%D0%BE%D0%B5_%D0%BF%D0%BE%D0%BB%D0%B5_1912_%D0%B3%D0%BE%D0%B4.jpg",
+      "description": "Сжатое поле в Витебской области, 1912 год, С. М. Прокудин-Горский"
+    },
+    {
+      "file": "/images/photos/harvest-work.jpg",
+      "title": "Прокудин-Горский На жнитве1 1909.jpg",
+      "author": "Sergei Mikhailovich Prokudin-Gorsky (1863 to 1944)",
+      "date": "1909",
+      "license": "PD-old-auto-expired",
+      "licenseNote": "Public domain (PD-old). The author died more than 70 years ago.",
+      "source": "https://commons.wikimedia.org/wiki/File:%D0%9F%D1%80%D0%BE%D0%BA%D1%83%D0%B4%D0%B8%D0%BD-%D0%93%D0%BE%D1%80%D1%81%D0%BA%D0%B8%D0%B9_%D0%9D%D0%B0_%D0%B6%D0%BD%D0%B8%D1%82%D0%B2%D0%B51_1909.jpg",
+      "description": "Прокудин-Горский. На жнитве. 1909"
+    },
+    {
+      "file": "/images/photos/korovniki-churches.jpg",
+      "title": "Ensemble of churches in Korovniki (Prokudin-Gorsky).jpg",
+      "author": "Sergei Mikhailovich Prokudin-Gorsky (1863 to 1944)",
+      "date": "1911",
+      "license": "PD-old-auto-expired",
+      "licenseNote": "Public domain (PD-old). The author died more than 70 years ago.",
+      "source": "https://commons.wikimedia.org/wiki/File:Ensemble_of_churches_in_Korovniki_(Prokudin-Gorsky).jpg",
+      "description": "General view of the Church of St. John Chrysostom and architectural ensemble in Korovniki (view from the mill) from the northwest. Yaroslavl, 1911"
+    },
+    {
+      "file": "/images/photos/bread-vendor.jpg",
+      "title": "Gorskii 21765u.jpg",
+      "author": "Sergei Mikhailovich Prokudin-Gorsky (1863 to 1944)",
+      "date": "between 1905 and 1915",
+      "license": "PD-old-auto-expired",
+      "licenseNote": "Public domain (PD-old). The author died more than 70 years ago.",
+      "source": "https://commons.wikimedia.org/wiki/File:Gorskii_21765u.jpg",
+      "description": "Flat breads vendor. Samarkand"
+    },
+    {
+      "file": "/images/photos/lake-onega-railway.jpg",
+      "title": "Prokudin-Gorskii-02.jpg",
+      "author": "Sergei Mikhailovich Prokudin-Gorsky (1863 to 1944)",
+      "date": "1915",
+      "license": "PD-old-auto-1923",
+      "licenseNote": "Public domain (PD-old). The author died more than 70 years ago.",
+      "source": "https://commons.wikimedia.org/wiki/File:Prokudin-Gorskii-02.jpg",
+      "description": "Original Description: On the handcar outside Petrozavodsk on the Murmansk railway.Handcar riding along the Murmansk railroad, on the shore of Lake Onega."
+    },
+    {
+      "file": "/images/photos/river-town.jpg",
+      "title": "Prokudin-Gorskii-32.jpg",
+      "author": "Sergei Mikhailovich Prokudin-Gorsky (1863 to 1944)",
+      "date": "1912",
+      "license": "PD-old-auto-expired",
+      "licenseNote": "Public domain (PD-old). The author died more than 70 years ago.",
+      "source": "https://commons.wikimedia.org/wiki/File:Prokudin-Gorskii-32.jpg",
+      "description": "Early color photograph from Russia, created by Sergei Mikhailovich Prokudin-Gorskii as part of his work to document the Russian Empire from 1909 to 1915. The V"
+    },
+    {
+      "file": "/images/photos/staritsa-view.jpg",
+      "title": "Staritsa Prokudin-Gorsky (cropped).jpg",
+      "author": "Sergei Mikhailovich Prokudin-Gorsky (1863 to 1944)",
+      "date": "1910",
+      "license": "PD-old-auto-expired",
+      "licenseNote": "Public domain (PD-old). The author died more than 70 years ago.",
+      "source": "https://commons.wikimedia.org/wiki/File:Staritsa_Prokudin-Gorsky_(cropped).jpg",
+      "description": "View of Staritsa in 1910"
+    }
+  ]
+}
