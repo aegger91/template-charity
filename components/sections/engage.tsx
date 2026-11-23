@@ -40,6 +40,7 @@ export function NeedsBoardSection({ section, lang }: SectionProps<NeedsSection>)
         }))}
         strings={{
           all: tr("allNeeds", lang),
+          filterLabel: tr("filterByCategory", lang),
           iCanHelp: tr("iCanHelp", lang),
           postANeed: tr("postANeed", lang),
           urgent: tr("urgent", lang),

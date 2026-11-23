@@ -69,6 +69,7 @@ export default async function LangLayout({ children, params }: LayoutProps<"/[la
               languages={getLanguages().map((l) => ({ code: l.code, label: l.label, dir: l.dir }))}
               strings={{
                 menu: tr("menu", lang),
+                mainNav: tr("mainNav", lang),
                 closeMenu: tr("closeMenu", lang),
                 language: tr("language", lang),
               }}

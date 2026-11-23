@@ -81,7 +81,7 @@ export function CallToActionSection({ section, lang }: SectionProps<CtaSection>)
             <OrthodoxCross className="absolute end-8 top-8 h-16 text-gold/25" />
             <Tx as="h2" value={section.heading} lang={lang} className="max-w-lg font-heading text-3xl leading-tight font-semibold text-ink sm:text-4xl" />
             {section.intro ? <Tx as="p" value={section.intro} lang={lang} className="mt-4 max-w-lg text-lg text-ink-soft" /> : null}
-            <Button asChild className="mt-8 h-12 rounded-full bg-teal px-6 text-base font-semibold text-white hover:bg-teal-deep">
+            <Button asChild className="mt-8 h-auto min-h-12 max-w-full rounded-full bg-teal px-6 py-3 text-center text-base font-semibold whitespace-normal text-white hover:bg-teal-deep">
               <Link href={navHref(lang, section.button)}>
                 {t(section.button.label, lang)}
                 <ArrowRight className="rtl:-scale-x-100" />

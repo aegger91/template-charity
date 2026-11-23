@@ -22,7 +22,7 @@ type Props = {
   categories: { id: string; label: string }[];
   postNeedUrl: string | null;
   compact?: boolean;
-  strings: { all: string; iCanHelp: string; postANeed: string; urgent: string; noNeeds: string; opens: string; connectOff: string };
+  strings: { all: string; filterLabel: string; iCanHelp: string; postANeed: string; urgent: string; noNeeds: string; opens: string; connectOff: string };
 };
 
 const icons: Record<string, typeof Car> = {
@@ -42,7 +42,7 @@ export function NeedsBoard({ needs, categories, postNeedUrl, compact, strings }:
     <div>
       <div className="mb-6 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
         {!compact ? (
-          <div role="group" aria-label="Filter" className="-mx-1 flex gap-2 overflow-x-auto px-1 pb-1 [scrollbar-width:thin]">
+          <div role="group" aria-label={strings.filterLabel} className="flex flex-wrap gap-2">
             {[{ id: "all", label: strings.all }, ...categories].map((c) => (
               <button
                 key={c.id}

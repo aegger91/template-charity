@@ -28,7 +28,7 @@ type Props = {
   nav: NavEntry[];
   donate: Link_;
   languages: { code: string; label: string; dir: string }[];
-  strings: { menu: string; closeMenu: string; language: string };
+  strings: { menu: string; mainNav: string; closeMenu: string; language: string };
 };
 
 function swapLanguage(pathname: string, code: string) {
@@ -81,7 +81,7 @@ export function SiteHeader({ lang, dir, homeHref, logo, drawerLogo, nav, donate,
           {logo}
         </Link>
 
-        <nav aria-label="Main" className="ms-auto hidden xl:block">
+        <nav aria-label={strings.mainNav} className="ms-auto hidden xl:block">
           <ul className="flex items-center gap-0.5">
             {nav.map((item) =>
               item.children?.length ? (
@@ -139,7 +139,7 @@ export function SiteHeader({ lang, dir, homeHref, logo, drawerLogo, nav, donate,
                 <SheetTitle className="sr-only">{strings.menu}</SheetTitle>
                 {drawerLogo}
               </SheetHeader>
-              <nav aria-label="Main" className="px-3 py-2">
+              <nav aria-label={strings.mainNav} className="px-3 py-2">
                 <Accordion type="single" collapsible>
                   {nav.map((item) =>
                     item.children?.length ? (

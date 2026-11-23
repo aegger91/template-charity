@@ -2,6 +2,8 @@
   "$schema": "../schemas/ui.schema.json",
   "strings": {
     "skipToContent": { "en": "Skip to content", "es": "Saltar al contenido", "ar": "انتقل إلى المحتوى" },
+    "filterByCategory": { "en": "Filter by category", "es": "Filtrar por categoría", "ar": "التصفية حسب الفئة" },
+    "mainNav": { "en": "Main", "es": "Principal", "ar": "الرئيسية" },
     "menu": { "en": "Menu", "es": "Menú", "ar": "القائمة" },
     "closeMenu": { "en": "Close menu", "es": "Cerrar menú", "ar": "إغلاق القائمة" },
     "language": { "en": "Language", "es": "Idioma", "ar": "اللغة" },
