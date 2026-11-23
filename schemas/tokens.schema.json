@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Design tokens",
+  "description": "Each value becomes a CSS variable named --token-{group}-{name}.",
+  "type": "object",
+  "required": [
+    "color",
+    "font",
+    "radius",
+    "layout",
+    "motion"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "color": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "string",
+        "pattern": "^#[0-9A-Fa-f]{6}$"
+      }
+    },
+    "font": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "string"
+      }
+    },
+    "radius": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "string"
+      }
+    },
+    "layout": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "string"
+      }
+    },
+    "motion": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "number",
+        "minimum": 0
+      }
+    }
+  }
+}

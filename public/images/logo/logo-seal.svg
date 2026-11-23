@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <defs><path id="ring" d="M60 60m-44 0a44 44 0 1 1 88 0a44 44 0 1 1-88 0"/></defs>
+  <circle cx="60" cy="60" r="58" fill="#0D5C6E"/>
+  <circle cx="60" cy="60" r="55" fill="none" stroke="#C9952B" stroke-width="2"/>
+  <circle cx="60" cy="60" r="33" fill="none" stroke="#C9952B" stroke-width="1.5"/>
+  <text fill="#fff" font-size="10.5" font-weight="600" letter-spacing="1.2" font-family="Georgia, serif"><textPath href="#ring" startOffset="50%" text-anchor="middle">ST. EXAMPLE ORTHODOX CHARITY</textPath></text>
+  <svg x="46" y="40" width="28" height="39.2" viewBox="0 0 40 56" fill="#C9952B"><path d="M18 0H22V56H18ZM13 6.5H27V10H13ZM5.5 15.5H34.5V20H5.5ZM10.5 36L29.5 41.6V45.2L10.5 39.6Z"/></svg>
+</svg>

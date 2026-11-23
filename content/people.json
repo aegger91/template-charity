@@ -1,0 +1,142 @@
+{
+  "$schema": "../schemas/people.schema.json",
+  "spiritualAdvisor": {
+    "name": {
+      "en": "[Bishop's name and title]",
+      "es": "[Nombre y título del obispo]",
+      "ar": "[اسم الأسقف ولقبه]"
+    },
+    "role": {
+      "en": "Spiritual advisor, with the blessing of the diocesan bishop",
+      "es": "Consejero espiritual, con la bendición del obispo diocesano",
+      "ar": "المرشد الروحي، ببركة أسقف الأبرشية"
+    },
+    "blessing": {
+      "en": "[Short excerpt from your letter of blessing.]",
+      "es": "[Breve extracto de vuestra carta de bendición.]",
+      "ar": "[مقتطف قصير من رسالة البركة.]"
+    },
+    "letterFile": "/downloads/sample-letter-of-blessing.pdf"
+  },
+  "groups": [
+    {
+      "id": "board",
+      "title": {
+        "en": "Board of directors",
+        "es": "Junta directiva",
+        "ar": "مجلس الإدارة"
+      },
+      "members": [
+        {
+          "name": {
+            "en": "[Board chair name]",
+            "es": "[Nombre de la presidencia]",
+            "ar": "[اسم رئيس المجلس]"
+          },
+          "role": {
+            "en": "Chair",
+            "es": "Presidencia",
+            "ar": "رئيس المجلس"
+          }
+        },
+        {
+          "name": {
+            "en": "[Treasurer name]",
+            "es": "[Nombre de tesorería]",
+            "ar": "[اسم أمين الصندوق]"
+          },
+          "role": {
+            "en": "Treasurer",
+            "es": "Tesorería",
+            "ar": "أمين الصندوق"
+          }
+        },
+        {
+          "name": {
+            "en": "[Secretary name]",
+            "es": "[Nombre de secretaría]",
+            "ar": "[اسم أمين السر]"
+          },
+          "role": {
+            "en": "Secretary",
+            "es": "Secretaría",
+            "ar": "أمين السر"
+          }
+        },
+        {
+          "name": {
+            "en": "[Clergy member name]",
+            "es": "[Nombre del clérigo]",
+            "ar": "[اسم عضو الإكليروس]"
+          },
+          "role": {
+            "en": "Clergy representative",
+            "es": "Representante del clero",
+            "ar": "ممثل الإكليروس"
+          }
+        }
+      ]
+    },
+    {
+      "id": "staff",
+      "title": {
+        "en": "Staff",
+        "es": "Equipo",
+        "ar": "الفريق"
+      },
+      "members": [
+        {
+          "name": {
+            "en": "[Director name]",
+            "es": "[Nombre de la dirección]",
+            "ar": "[اسم المدير]"
+          },
+          "role": {
+            "en": "Executive director",
+            "es": "Dirección ejecutiva",
+            "ar": "المدير التنفيذي"
+          },
+          "bio": {
+            "en": "One or two lines about this person.",
+            "es": "Una o dos líneas sobre esta persona.",
+            "ar": "سطر أو سطران عن هذا الشخص."
+          }
+        },
+        {
+          "name": {
+            "en": "[Program lead name]",
+            "es": "[Nombre de coordinación]",
+            "ar": "[اسم منسق البرامج]"
+          },
+          "role": {
+            "en": "Programs coordinator",
+            "es": "Coordinación de programas",
+            "ar": "منسق البرامج"
+          },
+          "bio": {
+            "en": "One or two lines about this person.",
+            "es": "Una o dos líneas sobre esta persona.",
+            "ar": "سطر أو سطران عن هذا الشخص."
+          }
+        },
+        {
+          "name": {
+            "en": "[Volunteer lead name]",
+            "es": "[Nombre de voluntariado]",
+            "ar": "[اسم منسق المتطوعين]"
+          },
+          "role": {
+            "en": "Volunteer coordinator",
+            "es": "Coordinación de voluntariado",
+            "ar": "منسق المتطوعين"
+          },
+          "bio": {
+            "en": "One or two lines about this person.",
+            "es": "Una o dos líneas sobre esta persona.",
+            "ar": "سطر أو سطران عن هذا الشخص."
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "$schema": "../schemas/needs.schema.json",
+  "items": [
+    {
+      "id": "need-101",
+      "category": "food",
+      "urgent": true,
+      "title": { "en": "Two volunteers to stock the Tuesday pantry", "es": "Dos voluntarios para reponer la despensa del martes", "ar": "متطوعان لترتيب مخزن الثلاثاء" },
+      "location": { "en": "Sample City, north side", "es": "Ciudad de Muestra, zona norte", "ar": "مدينة النموذج، الجهة الشمالية" },
+      "postedBy": { "en": "Sample Chapter North", "es": "Capítulo de muestra Norte", "ar": "الفرع التجريبي الشمالي" },
+      "posted": "2026-11-20"
+    },
+    {
+      "id": "need-102",
+      "category": "transport",
+      "title": { "en": "Rides to Sunday Liturgy for an elderly parishioner", "es": "Transporte a la Liturgia dominical para una feligresa mayor", "ar": "توصيل سيدة مسنّة من الرعية إلى قداس الأحد" },
+      "location": { "en": "Sample Town", "es": "Pueblo de Muestra", "ar": "بلدة النموذج" },
+      "postedBy": { "en": "Sample partner parish", "es": "Parroquia asociada de muestra", "ar": "رعية شريكة تجريبية" },
+      "posted": "2026-11-18"
+    },
+    {
+      "id": "need-103",
+      "category": "household",
+      "title": { "en": "Winter coats in children's sizes", "es": "Abrigos de invierno en tallas infantiles", "ar": "معاطف شتوية بمقاسات الأطفال" },
+      "location": { "en": "Collected at the office", "es": "Se recogen en la oficina", "ar": "تُجمع في المكتب" },
+      "postedBy": { "en": "Winter relief team", "es": "Equipo de invierno", "ar": "فريق إغاثة الشتاء" },
+      "posted": "2026-11-15",
+      "urgent": true
+    },
+    {
+      "id": "need-104",
+      "category": "skills",
+      "title": { "en": "A volunteer who can help families with rental paperwork", "es": "Un voluntario que ayude a familias con trámites de alquiler", "ar": "متطوع يساعد العائلات في أوراق الإيجار" },
+      "location": { "en": "Online or in person", "es": "En línea o en persona", "ar": "عبر الإنترنت أو حضوريًا" },
+      "postedBy": { "en": "Family support team", "es": "Equipo de apoyo a familias", "ar": "فريق دعم العائلات" },
+      "posted": "2026-11-10"
+    },
+    {
+      "id": "need-105",
+      "category": "visits",
+      "title": { "en": "Weekly visits to a homebound widow", "es": "Visitas semanales a una viuda que no sale de casa", "ar": "زيارات أسبوعية لأرملة لا تغادر بيتها" },
+      "location": { "en": "Sample City, east side", "es": "Ciudad de Muestra, zona este", "ar": "مدينة النموذج، الجهة الشرقية" },
+      "postedBy": { "en": "Sample sisterhood", "es": "Hermandad de muestra", "ar": "أخوية نسائية تجريبية" },
+      "posted": "2026-11-08"
+    },
+    {
+      "id": "need-106",
+      "category": "prayer",
+      "title": { "en": "Prayers for families waiting on surgery dates", "es": "Oraciones por familias que esperan fecha de operación", "ar": "صلوات لعائلات تنتظر مواعيد عمليات جراحية" },
+      "location": { "en": "Anywhere", "es": "Desde cualquier lugar", "ar": "من أي مكان" },
+      "postedBy": { "en": "Family support team", "es": "Equipo de apoyo a familias", "ar": "فريق دعم العائلات" },
+      "posted": "2026-11-05"
+    }
+  ]
+}

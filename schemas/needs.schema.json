@@ -1,0 +1,60 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Needs board",
+  "description": "Sample needs. A live site lists needs from OrthodoxConnect.",
+  "type": "object",
+  "required": [
+    "items"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "title",
+          "category",
+          "location",
+          "postedBy",
+          "posted"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "title": {
+            "$ref": "common.schema.json#/$defs/localized"
+          },
+          "category": {
+            "enum": [
+              "food",
+              "household",
+              "transport",
+              "skills",
+              "prayer",
+              "visits"
+            ]
+          },
+          "location": {
+            "$ref": "common.schema.json#/$defs/localized"
+          },
+          "postedBy": {
+            "$ref": "common.schema.json#/$defs/localized"
+          },
+          "posted": {
+            "$ref": "common.schema.json#/$defs/date"
+          },
+          "urgent": {
+            "type": "boolean"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Campaigns and appeals",
+  "description": "Raised amounts and donor counts are never stored here. They come from the payment provider through the totals adapter.",
+  "type": "object",
+  "required": ["items"],
+  "additionalProperties": false,
+  "properties": {
+    "$schema": { "type": "string" },
+    "items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["slug", "title", "summary", "body", "image", "goal", "fundId", "provider", "deadline", "updates"],
+        "additionalProperties": false,
+        "properties": {
+          "slug": { "$ref": "common.schema.json#/$defs/slug" },
+          "title": { "$ref": "common.schema.json#/$defs/localized" },
+          "summary": { "$ref": "common.schema.json#/$defs/localized" },
+          "body": { "type": "array", "items": { "$ref": "common.schema.json#/$defs/localized" } },
+          "image": { "$ref": "common.schema.json#/$defs/image" },
+          "goal": { "type": "number", "exclusiveMinimum": 0 },
+          "currency": { "type": "string", "pattern": "^[A-Z]{3}$" },
+          "fundId": { "$ref": "common.schema.json#/$defs/fundId" },
+          "provider": { "$ref": "common.schema.json#/$defs/totalsProvider" },
+          "deadline": { "$ref": "common.schema.json#/$defs/date" },
+          "featured": { "type": "boolean", "description": "Shown in the home hero. Use on one campaign." },
+          "program": { "type": "string", "description": "Slug of the related program." },
+          "updates": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["date", "title", "body"],
+              "additionalProperties": false,
+              "properties": {
+                "date": { "$ref": "common.schema.json#/$defs/date" },
+                "title": { "$ref": "common.schema.json#/$defs/localized" },
+                "body": { "$ref": "common.schema.json#/$defs/localized" }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

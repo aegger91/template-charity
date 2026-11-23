@@ -1,0 +1,83 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Board, staff and spiritual advisor",
+  "type": "object",
+  "required": [
+    "spiritualAdvisor",
+    "groups"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "spiritualAdvisor": {
+      "type": "object",
+      "required": [
+        "name",
+        "role",
+        "blessing"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "name": {
+          "$ref": "common.schema.json#/$defs/localized"
+        },
+        "role": {
+          "$ref": "common.schema.json#/$defs/localized"
+        },
+        "bio": {
+          "$ref": "common.schema.json#/$defs/localized"
+        },
+        "blessing": {
+          "$ref": "common.schema.json#/$defs/localized"
+        },
+        "letterFile": {
+          "type": "string"
+        }
+      }
+    },
+    "groups": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "title",
+          "members"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "$ref": "common.schema.json#/$defs/slug"
+          },
+          "title": {
+            "$ref": "common.schema.json#/$defs/localized"
+          },
+          "members": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "name",
+                "role"
+              ],
+              "additionalProperties": false,
+              "properties": {
+                "name": {
+                  "$ref": "common.schema.json#/$defs/localized"
+                },
+                "role": {
+                  "$ref": "common.schema.json#/$defs/localized"
+                },
+                "bio": {
+                  "$ref": "common.schema.json#/$defs/localized"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Events",
+  "description": "Times are UTC. RSVP goes through OrthodoxConnect using the event id.",
+  "type": "object",
+  "required": [
+    "items"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "title",
+          "start",
+          "location",
+          "summary",
+          "kind"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "$ref": "common.schema.json#/$defs/slug"
+          },
+          "title": {
+            "$ref": "common.schema.json#/$defs/localized"
+          },
+          "start": {
+            "$ref": "common.schema.json#/$defs/dateTime"
+          },
+          "end": {
+            "$ref": "common.schema.json#/$defs/dateTime"
+          },
+          "location": {
+            "$ref": "common.schema.json#/$defs/localized"
+          },
+          "summary": {
+            "$ref": "common.schema.json#/$defs/localized"
+          },
+          "kind": {
+            "$ref": "common.schema.json#/$defs/localized"
+          }
+        }
+      }
+    }
+  }
+}

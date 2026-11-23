@@ -1,0 +1,220 @@
+{
+  "$schema": "../schemas/programs.schema.json",
+  "items": [
+    {
+      "slug": "parish-food-pantries",
+      "title": {
+        "en": "Parish food pantries",
+        "es": "Despensas parroquiales",
+        "ar": "مخازن الطعام في الرعايا"
+      },
+      "summary": {
+        "en": "Sample program: weekly food pantries run by local parishes.",
+        "es": "Programa de muestra: despensas semanales gestionadas por parroquias locales.",
+        "ar": "برنامج تجريبي: مخازن طعام أسبوعية تديرها الرعايا المحلية."
+      },
+      "body": [
+        {
+          "en": "Sample text. Add one or two lines about what this program provides and who it serves.",
+          "es": "Texto de muestra. Añade una o dos líneas sobre lo que ofrece este programa y a quién atiende.",
+          "ar": "نص تجريبي. أضف سطرًا أو سطرين عمّا يقدمه هذا البرنامج ومن يخدم."
+        }
+      ],
+      "highlights": [
+        {
+          "en": "Sample highlight 1",
+          "es": "Dato de muestra 1",
+          "ar": "نقطة تجريبية ١"
+        },
+        {
+          "en": "Sample highlight 2",
+          "es": "Dato de muestra 2",
+          "ar": "نقطة تجريبية ٢"
+        },
+        {
+          "en": "Sample highlight 3",
+          "es": "Dato de muestra 3",
+          "ar": "نقطة تجريبية ٣"
+        }
+      ],
+      "image": {
+        "src": "/images/photos/harvested-field.jpg",
+        "alt": {
+          "en": "Sheaves of grain standing in a harvested field",
+          "es": "Gavillas de grano en un campo segado",
+          "ar": "حزم من القمح في حقل محصود"
+        }
+      },
+      "fundId": "parish-pantries",
+      "locations": [
+        "great-lakes",
+        "carpathians"
+      ]
+    },
+    {
+      "slug": "winter-relief",
+      "title": {
+        "en": "Winter heating and warm clothing",
+        "es": "Calefacción y ropa de abrigo en invierno",
+        "ar": "التدفئة والملابس الشتوية"
+      },
+      "summary": {
+        "en": "Sample program: fuel, blankets and warm clothing for the winter.",
+        "es": "Programa de muestra: combustible, mantas y ropa de abrigo para el invierno.",
+        "ar": "برنامج تجريبي: وقود وبطانيات وملابس دافئة لفصل الشتاء."
+      },
+      "body": [
+        {
+          "en": "Sample text. Add one or two lines about what this program provides and who it serves.",
+          "es": "Texto de muestra. Añade una o dos líneas sobre lo que ofrece este programa y a quién atiende.",
+          "ar": "نص تجريبي. أضف سطرًا أو سطرين عمّا يقدمه هذا البرنامج ومن يخدم."
+        }
+      ],
+      "image": {
+        "src": "/images/photos/staritsa-view.jpg",
+        "alt": {
+          "en": "A small town with a white church above a river valley",
+          "es": "Un pueblo pequeño con una iglesia blanca sobre el valle de un río",
+          "ar": "بلدة صغيرة تعلوها كنيسة بيضاء فوق وادي نهر"
+        }
+      },
+      "fundId": "winter-relief-2026",
+      "locations": [
+        "carpathians",
+        "alaska"
+      ]
+    },
+    {
+      "slug": "family-support",
+      "title": {
+        "en": "Family support and household help",
+        "es": "Apoyo a familias y ayuda en el hogar",
+        "ar": "دعم العائلات والمساعدة المنزلية"
+      },
+      "summary": {
+        "en": "Sample program: short-term help for families in a hard season.",
+        "es": "Programa de muestra: ayuda temporal para familias en un momento difícil.",
+        "ar": "برنامج تجريبي: مساعدة مؤقتة للعائلات في وقت صعب."
+      },
+      "body": [
+        {
+          "en": "Sample text. Add one or two lines about what this program provides and who it serves.",
+          "es": "Texto de muestra. Añade una o dos líneas sobre lo que ofrece este programa y a quién atiende.",
+          "ar": "نص تجريبي. أضف سطرًا أو سطرين عمّا يقدمه هذا البرنامج ومن يخدم."
+        }
+      ],
+      "image": {
+        "src": "/images/photos/spinning-yarn.jpg",
+        "alt": {
+          "en": "A woman spinning yarn on the porch of a wooden house",
+          "es": "Una mujer hilando en el porche de una casa de madera",
+          "ar": "امرأة تغزل الصوف على شرفة بيت خشبي"
+        }
+      },
+      "fundId": "family-support",
+      "locations": [
+        "great-lakes",
+        "levant"
+      ]
+    },
+    {
+      "slug": "seminarian-scholarships",
+      "title": {
+        "en": "Seminarian scholarships",
+        "es": "Becas para seminaristas",
+        "ar": "منح الإكليريكيين"
+      },
+      "summary": {
+        "en": "Sample program: tuition and book grants for seminarians.",
+        "es": "Programa de muestra: becas de matrícula y libros para seminaristas.",
+        "ar": "برنامج تجريبي: منح للرسوم الدراسية والكتب للإكليريكيين."
+      },
+      "body": [
+        {
+          "en": "Sample text. Add one or two lines about what this program provides and who it serves.",
+          "es": "Texto de muestra. Añade una o dos líneas sobre lo que ofrece este programa y a quién atiende.",
+          "ar": "نص تجريبي. أضف سطرًا أو سطرين عمّا يقدمه هذا البرنامج ومن يخدم."
+        }
+      ],
+      "image": {
+        "src": "/images/photos/monastery-lake.jpg",
+        "alt": {
+          "en": "A monastery with white walls and green domes on a lake island",
+          "es": "Un monasterio de muros blancos y cúpulas verdes en una isla del lago",
+          "ar": "دير بأسوار بيضاء وقباب خضراء على جزيرة في بحيرة"
+        }
+      },
+      "fundId": "seminarian-scholarships",
+      "locations": [
+        "great-lakes",
+        "east-africa"
+      ]
+    },
+    {
+      "slug": "youth-camps",
+      "title": {
+        "en": "Youth camps and retreats",
+        "es": "Campamentos y retiros juveniles",
+        "ar": "مخيمات الشباب ورياضاتهم الروحية"
+      },
+      "summary": {
+        "en": "Sample program: sponsored camp places for young people.",
+        "es": "Programa de muestra: plazas de campamento patrocinadas para jóvenes.",
+        "ar": "برنامج تجريبي: أماكن مموّلة في المخيمات للشباب."
+      },
+      "body": [
+        {
+          "en": "Sample text. Add one or two lines about what this program provides and who it serves.",
+          "es": "Texto de muestra. Añade una o dos líneas sobre lo que ofrece este programa y a quién atiende.",
+          "ar": "نص تجريبي. أضف سطرًا أو سطرين عمّا يقدمه هذا البرنامج ومن يخدم."
+        }
+      ],
+      "image": {
+        "src": "/images/photos/wooden-house.jpg",
+        "alt": {
+          "en": "Three young women in traditional dress in front of a wooden house",
+          "es": "Tres jóvenes con traje tradicional delante de una casa de madera",
+          "ar": "ثلاث شابات بملابس تقليدية أمام بيت خشبي"
+        }
+      },
+      "fundId": "youth-camps",
+      "locations": [
+        "alaska",
+        "levant"
+      ]
+    },
+    {
+      "slug": "church-repair-grants",
+      "title": {
+        "en": "Church repair grants",
+        "es": "Ayudas para reparar templos",
+        "ar": "منح ترميم الكنائس"
+      },
+      "summary": {
+        "en": "Sample program: matching grants for small parish repairs.",
+        "es": "Programa de muestra: ayudas compartidas para reparaciones en parroquias pequeñas.",
+        "ar": "برنامج تجريبي: منح مشتركة لترميمات الرعايا الصغيرة."
+      },
+      "body": [
+        {
+          "en": "Sample text. Add one or two lines about what this program provides and who it serves.",
+          "es": "Texto de muestra. Añade una o dos líneas sobre lo que ofrece este programa y a quién atiende.",
+          "ar": "نص تجريبي. أضف سطرًا أو سطرين عمّا يقدمه هذا البرنامج ومن يخدم."
+        }
+      ],
+      "image": {
+        "src": "/images/photos/church-st-nicholas.jpg",
+        "alt": {
+          "en": "A white church with a bell tower and a green roof",
+          "es": "Una iglesia blanca con campanario y tejado verde",
+          "ar": "كنيسة بيضاء ببرج أجراس وسقف أخضر"
+        }
+      },
+      "fundId": "church-repair-grants",
+      "locations": [
+        "carpathians",
+        "east-africa"
+      ]
+    }
+  ]
+}

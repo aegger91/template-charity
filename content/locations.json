@@ -1,0 +1,65 @@
+{
+  "$schema": "../schemas/locations.schema.json",
+  "items": [
+    {
+      "id": "great-lakes",
+      "name": { "en": "Sample site A", "es": "Sitio de muestra A", "ar": "موقع تجريبي أ" },
+      "region": { "en": "Great Lakes, North America", "es": "Grandes Lagos, Norteamérica", "ar": "منطقة البحيرات العظمى، أمريكا الشمالية" },
+      "lon": -84.5,
+      "lat": 42.3,
+      "summary": {
+        "en": "Parish pantries and family support with partner parishes in several cities.",
+        "es": "Despensas parroquiales y apoyo a familias con parroquias asociadas en varias ciudades.",
+        "ar": "مخازن طعام ودعم للعائلات مع رعايا شريكة في عدة مدن."
+      }
+    },
+    {
+      "id": "alaska",
+      "name": { "en": "Sample site B", "es": "Sitio de muestra B", "ar": "موقع تجريبي ب" },
+      "region": { "en": "Alaska", "es": "Alaska", "ar": "ألاسكا" },
+      "lon": -152,
+      "lat": 61.5,
+      "summary": {
+        "en": "Winter fuel for village parishes and camp places for young people.",
+        "es": "Combustible de invierno para parroquias rurales y plazas de campamento para jóvenes.",
+        "ar": "وقود الشتاء لرعايا القرى وأماكن في المخيمات للشباب."
+      }
+    },
+    {
+      "id": "carpathians",
+      "name": { "en": "Sample site C", "es": "Sitio de muestra C", "ar": "موقع تجريبي ج" },
+      "region": { "en": "Carpathian region, Eastern Europe", "es": "Región de los Cárpatos, Europa del Este", "ar": "منطقة الكاربات، أوروبا الشرقية" },
+      "lon": 24.5,
+      "lat": 47.8,
+      "summary": {
+        "en": "Heating help for elderly people and repair grants for village churches.",
+        "es": "Ayuda para calefacción de personas mayores y reparación de iglesias rurales.",
+        "ar": "مساعدة في التدفئة لكبار السن ومنح لترميم كنائس القرى."
+      }
+    },
+    {
+      "id": "levant",
+      "name": { "en": "Sample site D", "es": "Sitio de muestra D", "ar": "موقع تجريبي د" },
+      "region": { "en": "The Levant, Middle East", "es": "El Levante, Oriente Medio", "ar": "بلاد الشام، الشرق الأوسط" },
+      "lon": 35.8,
+      "lat": 34.1,
+      "summary": {
+        "en": "Family support and youth programs run with local parishes.",
+        "es": "Apoyo a familias y programas juveniles con parroquias locales.",
+        "ar": "دعم العائلات وبرامج الشباب بالتعاون مع الرعايا المحلية."
+      }
+    },
+    {
+      "id": "east-africa",
+      "name": { "en": "Sample site E", "es": "Sitio de muestra E", "ar": "موقع تجريبي هـ" },
+      "region": { "en": "East Africa", "es": "África Oriental", "ar": "شرق أفريقيا" },
+      "lon": 36.8,
+      "lat": -1.3,
+      "summary": {
+        "en": "Seminarian scholarships and repair grants for growing parishes.",
+        "es": "Becas para seminaristas y ayudas de reparación para parroquias en crecimiento.",
+        "ar": "منح للإكليريكيين ومنح ترميم لرعايا تنمو."
+      }
+    }
+  ]
+}

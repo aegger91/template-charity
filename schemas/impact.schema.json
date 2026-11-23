@@ -1,0 +1,86 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Impact stats",
+  "description": "Each stat has either a fixed value or a giving source. Giving stats are hidden when their provider is not connected. Use fundId \"all-funds\" for the total across funds.",
+  "type": "object",
+  "required": [
+    "items"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "label"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "$ref": "common.schema.json#/$defs/slug"
+          },
+          "label": {
+            "$ref": "common.schema.json#/$defs/localized"
+          },
+          "value": {
+            "type": "number",
+            "minimum": 0
+          },
+          "suffix": {
+            "$ref": "common.schema.json#/$defs/localized"
+          },
+          "giving": {
+            "type": "object",
+            "required": [
+              "fundId",
+              "metric",
+              "provider"
+            ],
+            "additionalProperties": false,
+            "properties": {
+              "fundId": {
+                "type": "string"
+              },
+              "metric": {
+                "enum": [
+                  "raised",
+                  "donors"
+                ]
+              },
+              "provider": {
+                "$ref": "common.schema.json#/$defs/totalsProvider"
+              }
+            }
+          }
+        },
+        "oneOf": [
+          {
+            "required": [
+              "value"
+            ],
+            "not": {
+              "required": [
+                "giving"
+              ]
+            }
+          },
+          {
+            "required": [
+              "giving"
+            ],
+            "not": {
+              "required": [
+                "value"
+              ]
+            }
+          }
+        ]
+      }
+    }
+  }
+}

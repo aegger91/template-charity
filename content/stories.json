@@ -1,0 +1,126 @@
+{
+  "$schema": "../schemas/stories.schema.json",
+  "items": [
+    {
+      "slug": "a-pantry-that-opens-every-tuesday",
+      "kind": "story",
+      "date": "2026-11-12",
+      "title": {
+        "en": "A pantry that opens every Tuesday",
+        "es": "Una despensa que abre cada martes",
+        "ar": "مخزن طعام يفتح كل ثلاثاء"
+      },
+      "summary": {
+        "en": "Sample story about a weekly parish pantry.",
+        "es": "Historia de muestra sobre una despensa parroquial semanal.",
+        "ar": "قصة تجريبية عن مخزن طعام أسبوعي في رعية."
+      },
+      "body": [
+        {
+          "en": "Sample text. Add a short account in one or two lines, or link to a longer article.",
+          "es": "Texto de muestra. Añade un relato breve en una o dos líneas, o enlaza un artículo más largo.",
+          "ar": "نص تجريبي. أضف قصة قصيرة في سطر أو سطرين، أو ضع رابطًا لمقال أطول."
+        }
+      ],
+      "image": {
+        "src": "/images/photos/harvest-work.jpg",
+        "alt": {
+          "en": "Families resting beside sheaves of grain at harvest time",
+          "es": "Familias descansando junto a gavillas de grano en la cosecha",
+          "ar": "عائلات تستريح بجانب حزم القمح وقت الحصاد"
+        }
+      },
+      "program": "parish-food-pantries"
+    },
+    {
+      "slug": "firewood-before-the-frost",
+      "kind": "story",
+      "date": "2026-11-02",
+      "title": {
+        "en": "Firewood before the frost",
+        "es": "Leña antes de la helada",
+        "ar": "الحطب قبل الصقيع"
+      },
+      "summary": {
+        "en": "Sample story about winter deliveries.",
+        "es": "Historia de muestra sobre repartos de invierno.",
+        "ar": "قصة تجريبية عن توصيلات الشتاء."
+      },
+      "body": [
+        {
+          "en": "Sample text in English only. Other languages show this English text until a translation is added."
+        }
+      ],
+      "image": {
+        "src": "/images/photos/lake-onega-railway.jpg",
+        "alt": {
+          "en": "Men on a railway handcar beside a lake",
+          "es": "Hombres en una dresina junto a un lago",
+          "ar": "رجال على عربة سكة حديد يدوية بجانب بحيرة"
+        }
+      },
+      "program": "winter-relief"
+    },
+    {
+      "slug": "camp-places-for-next-summer",
+      "kind": "news",
+      "date": "2026-10-28",
+      "title": {
+        "en": "Camp places for next summer",
+        "es": "Plazas de campamento para el próximo verano",
+        "ar": "أماكن المخيمات للصيف القادم"
+      },
+      "summary": {
+        "en": "Sample news item about camp places.",
+        "es": "Noticia de muestra sobre plazas de campamento.",
+        "ar": "خبر تجريبي عن أماكن في المخيمات."
+      },
+      "body": [
+        {
+          "en": "Sample text. Add a short account in one or two lines, or link to a longer article.",
+          "es": "Texto de muestra. Añade un relato breve en una o dos líneas, o enlaza un artículo más largo.",
+          "ar": "نص تجريبي. أضف قصة قصيرة في سطر أو سطرين، أو ضع رابطًا لمقال أطول."
+        }
+      ],
+      "image": {
+        "src": "/images/photos/wooden-house.jpg",
+        "alt": {
+          "en": "Three young women in traditional dress in front of a wooden house",
+          "es": "Tres jóvenes con traje tradicional delante de una casa de madera",
+          "ar": "ثلاث شابات بملابس تقليدية أمام بيت خشبي"
+        }
+      },
+      "program": "youth-camps"
+    },
+    {
+      "slug": "annual-report-published",
+      "kind": "news",
+      "date": "2026-09-15",
+      "title": {
+        "en": "Our sample annual report is ready",
+        "es": "Ya está listo nuestro informe anual de muestra",
+        "ar": "تقريرنا السنوي التجريبي جاهز"
+      },
+      "summary": {
+        "en": "Sample news item about the annual report.",
+        "es": "Noticia de muestra sobre la memoria anual.",
+        "ar": "خبر تجريبي عن التقرير السنوي."
+      },
+      "body": [
+        {
+          "en": "Sample text. Add a short account in one or two lines, or link to a longer article.",
+          "es": "Texto de muestra. Añade un relato breve en una o dos líneas, o enlaza un artículo más largo.",
+          "ar": "نص تجريبي. أضف قصة قصيرة في سطر أو سطرين، أو ضع رابطًا لمقال أطول."
+        }
+      ],
+      "image": {
+        "src": "/images/photos/river-town.jpg",
+        "alt": {
+          "en": "A river town with churches seen from a hill",
+          "es": "Una ciudad junto al río con iglesias, vista desde una colina",
+          "ar": "بلدة نهرية بكنائسها تُرى من تلة"
+        }
+      }
+    }
+  ]
+}

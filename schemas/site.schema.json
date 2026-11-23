@@ -1,0 +1,141 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Site settings",
+  "type": "object",
+  "required": ["name", "shortName", "mission", "defaultLanguage", "languages", "currency", "logo", "contact", "navigation", "donateButton", "footer", "orthodoxConnect", "giving", "collections"],
+  "additionalProperties": false,
+  "properties": {
+    "$schema": { "type": "string" },
+    "name": { "$ref": "common.schema.json#/$defs/localized" },
+    "shortName": { "$ref": "common.schema.json#/$defs/localized", "description": "Shown in the header on small phones." },
+    "mission": { "$ref": "common.schema.json#/$defs/localized", "description": "One line. Used as the home hero heading." },
+    "description": { "$ref": "common.schema.json#/$defs/localized" },
+    "sampleNotice": { "$ref": "common.schema.json#/$defs/localized" },
+    "defaultLanguage": { "type": "string" },
+    "languages": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["code", "label", "dir", "locale"],
+        "additionalProperties": false,
+        "properties": {
+          "code": { "type": "string", "pattern": "^[a-z]{2,3}$" },
+          "label": { "type": "string" },
+          "dir": { "enum": ["ltr", "rtl"] },
+          "locale": { "type": "string", "description": "Used for number, currency and date formatting." }
+        }
+      }
+    },
+    "currency": { "type": "string", "pattern": "^[A-Z]{3}$" },
+    "logo": {
+      "type": "object",
+      "required": ["style", "image", "alt"],
+      "additionalProperties": false,
+      "properties": {
+        "style": { "enum": ["circular-seal", "kiot-frame", "square-image", "wordmark"] },
+        "image": { "type": "string", "description": "Square logo file, used by the square-image style." },
+        "alt": { "$ref": "common.schema.json#/$defs/localized" },
+        "sealText": { "$ref": "common.schema.json#/$defs/localized", "description": "Text around the circular seal." }
+      }
+    },
+    "contact": {
+      "type": "object",
+      "required": ["email", "phone", "address"],
+      "additionalProperties": false,
+      "properties": {
+        "email": { "type": "string" },
+        "phone": { "type": "string" },
+        "address": { "$ref": "common.schema.json#/$defs/localized" },
+        "hours": { "$ref": "common.schema.json#/$defs/localized" }
+      }
+    },
+    "navigation": { "type": "array", "items": { "$ref": "common.schema.json#/$defs/navItem" } },
+    "donateButton": {
+      "type": "object",
+      "required": ["label", "page"],
+      "additionalProperties": false,
+      "properties": { "label": { "$ref": "common.schema.json#/$defs/localized" }, "page": { "type": "string" } }
+    },
+    "footer": {
+      "type": "object",
+      "required": ["about", "columns", "legal"],
+      "additionalProperties": false,
+      "properties": {
+        "about": { "$ref": "common.schema.json#/$defs/localized" },
+        "legal": { "$ref": "common.schema.json#/$defs/localized" },
+        "columns": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["heading", "links"],
+            "additionalProperties": false,
+            "properties": {
+              "heading": { "$ref": "common.schema.json#/$defs/localized" },
+              "links": { "type": "array", "items": { "$ref": "common.schema.json#/$defs/navItem" } }
+            }
+          }
+        }
+      }
+    },
+    "orthodoxConnect": {
+      "type": "object",
+      "required": ["enabled", "newsletter", "baseUrl", "organizationId", "links"],
+      "additionalProperties": false,
+      "properties": {
+        "enabled": { "type": "boolean", "description": "Turns every OrthodoxConnect button and the footer newsletter on or off." },
+        "newsletter": { "type": "boolean", "description": "Shows the footer newsletter signup when OrthodoxConnect is enabled." },
+        "baseUrl": { "type": "string" },
+        "organizationId": { "type": "string" },
+        "links": {
+          "type": "object",
+          "description": "Deep link paths. Placeholders: {org}, {lang}, {id}, {email}.",
+          "required": ["volunteerSignup", "postNeed", "respondToNeed", "eventRsvp", "newsletterSignup", "donorPortal"],
+          "additionalProperties": false,
+          "properties": {
+            "volunteerSignup": { "type": "string" },
+            "postNeed": { "type": "string" },
+            "respondToNeed": { "type": "string" },
+            "eventRsvp": { "type": "string" },
+            "newsletterSignup": { "type": "string" },
+            "donorPortal": { "type": "string" }
+          }
+        }
+      }
+    },
+    "giving": {
+      "type": "object",
+      "required": ["paymentProvider", "connectedProviders", "totalsEndpoint", "presetAmounts", "monthlyPresetAmounts", "funds", "taxReceiptNote"],
+      "additionalProperties": false,
+      "properties": {
+        "paymentProvider": { "enum": ["none", "stripe", "authorize-net", "tithely"], "description": "Checkout used by every gift form. \"none\" runs the demo." },
+        "connectedProviders": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": { "enum": ["stripe", "authorize-net", "tithely"] },
+          "description": "Providers whose totals the site may show. Leave empty until a provider is really connected."
+        },
+        "totalsEndpoint": { "type": "string", "description": "GET endpoint returning {raised, donors, updatedAt}. Placeholders: {fundId}, {provider}." },
+        "presetAmounts": { "type": "array", "items": { "type": "number", "minimum": 1 } },
+        "monthlyPresetAmounts": { "type": "array", "items": { "type": "number", "minimum": 1 } },
+        "funds": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["fundId", "name"],
+            "additionalProperties": false,
+            "properties": { "fundId": { "$ref": "common.schema.json#/$defs/fundId" }, "name": { "$ref": "common.schema.json#/$defs/localized" } }
+          }
+        },
+        "taxReceiptNote": { "$ref": "common.schema.json#/$defs/localized" }
+      }
+    },
+    "collections": {
+      "type": "object",
+      "description": "Base path for each detail page type, without slashes.",
+      "required": ["programs", "campaigns", "stories"],
+      "additionalProperties": false,
+      "properties": { "programs": { "type": "string" }, "campaigns": { "type": "string" }, "stories": { "type": "string" } }
+    }
+  }
+}

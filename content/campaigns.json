@@ -1,0 +1,162 @@
+{
+  "$schema": "../schemas/campaigns.schema.json",
+  "items": [
+    {
+      "slug": "warm-homes-winter-appeal",
+      "title": {
+        "en": "Warm Homes Winter Appeal",
+        "es": "Campaña de invierno Hogares Cálidos",
+        "ar": "نداء الشتاء: بيوت دافئة"
+      },
+      "summary": {
+        "en": "Sample appeal: firewood, heating and warm clothing before the coldest weeks.",
+        "es": "Campaña de muestra: leña, calefacción y ropa de abrigo antes de las semanas más frías.",
+        "ar": "حملة تجريبية: حطب وتدفئة وملابس دافئة قبل أبرد أسابيع السنة."
+      },
+      "body": [
+        {
+          "en": "Sample text. Add one or two lines about this appeal and what the goal will pay for.",
+          "es": "Texto de muestra. Añade una o dos líneas sobre esta campaña y lo que cubrirá la meta.",
+          "ar": "نص تجريبي. أضف سطرًا أو سطرين عن هذه الحملة وما سيغطيه الهدف."
+        }
+      ],
+      "image": {
+        "src": "/images/photos/staritsa-view.jpg",
+        "alt": {
+          "en": "A small town with a white church above a river valley",
+          "es": "Un pueblo pequeño con una iglesia blanca sobre el valle de un río",
+          "ar": "بلدة صغيرة تعلوها كنيسة بيضاء فوق وادي نهر"
+        }
+      },
+      "goal": 60000,
+      "fundId": "winter-relief-2026",
+      "provider": "mock",
+      "deadline": "2027-02-28",
+      "featured": true,
+      "program": "winter-relief",
+      "updates": [
+        {
+          "date": "2026-11-18",
+          "title": {
+            "en": "First deliveries are out",
+            "es": "Primeras entregas en marcha",
+            "ar": "انطلاق أولى عمليات التوزيع"
+          },
+          "body": {
+            "en": "Sample update. One or two lines about progress.",
+            "es": "Novedad de muestra. Una o dos líneas sobre el avance.",
+            "ar": "خبر تجريبي. سطر أو سطران عن التقدم."
+          }
+        },
+        {
+          "date": "2026-11-04",
+          "title": {
+            "en": "Lists received from parishes",
+            "es": "Listas recibidas de las parroquias",
+            "ar": "وصول القوائم من الرعايا"
+          },
+          "body": {
+            "en": "Sample update. One or two lines about progress.",
+            "es": "Novedad de muestra. Una o dos líneas sobre el avance.",
+            "ar": "خبر تجريبي. سطر أو سطران عن التقدم."
+          }
+        },
+        {
+          "date": "2026-10-20",
+          "title": {
+            "en": "The appeal opens",
+            "es": "Se abre la campaña",
+            "ar": "افتتاح النداء"
+          },
+          "body": {
+            "en": "Sample update. One or two lines about progress.",
+            "es": "Novedad de muestra. Una o dos líneas sobre el avance.",
+            "ar": "خبر تجريبي. سطر أو سطران عن التقدم."
+          }
+        }
+      ]
+    },
+    {
+      "slug": "seminarian-scholarship-fund",
+      "title": {
+        "en": "Seminarian Scholarship Fund",
+        "es": "Fondo de becas para seminaristas",
+        "ar": "صندوق منح الإكليريكيين"
+      },
+      "summary": {
+        "en": "Sample appeal: tuition and books for incoming seminarians.",
+        "es": "Campaña de muestra: matrícula y libros para nuevos seminaristas.",
+        "ar": "حملة تجريبية: رسوم دراسية وكتب للإكليريكيين الجدد."
+      },
+      "body": [
+        {
+          "en": "Sample text. Add one or two lines about this appeal and what the goal will pay for.",
+          "es": "Texto de muestra. Añade una o dos líneas sobre esta campaña y lo que cubrirá la meta.",
+          "ar": "نص تجريبي. أضف سطرًا أو سطرين عن هذه الحملة وما سيغطيه الهدف."
+        }
+      ],
+      "image": {
+        "src": "/images/photos/korovniki-churches.jpg",
+        "alt": {
+          "en": "A church with green domes and a tall bell tower by a river",
+          "es": "Una iglesia de cúpulas verdes y un alto campanario junto a un río",
+          "ar": "كنيسة بقباب خضراء وبرج أجراس عالٍ قرب نهر"
+        }
+      },
+      "goal": 40000,
+      "fundId": "seminarian-scholarships",
+      "provider": "mock",
+      "deadline": "2027-06-30",
+      "program": "seminarian-scholarships",
+      "updates": [
+        {
+          "date": "2026-11-10",
+          "title": {
+            "en": "Applications are open",
+            "es": "Solicitudes abiertas",
+            "ar": "باب التقديم مفتوح"
+          },
+          "body": {
+            "en": "Sample update. One or two lines about progress.",
+            "es": "Novedad de muestra. Una o dos líneas sobre el avance.",
+            "ar": "خبر تجريبي. سطر أو سطران عن التقدم."
+          }
+        }
+      ]
+    },
+    {
+      "slug": "village-church-roof",
+      "title": {
+        "en": "Village Church Roof Appeal",
+        "es": "Campaña para el tejado de una iglesia rural",
+        "ar": "نداء سقف كنيسة القرية"
+      },
+      "summary": {
+        "en": "Sample appeal: a new roof for a small parish church.",
+        "es": "Campaña de muestra: un tejado nuevo para una iglesia parroquial pequeña.",
+        "ar": "حملة تجريبية: سقف جديد لكنيسة رعية صغيرة."
+      },
+      "body": [
+        {
+          "en": "Sample text. Add one or two lines about this appeal and what the goal will pay for.",
+          "es": "Texto de muestra. Añade una o dos líneas sobre esta campaña y lo que cubrirá la meta.",
+          "ar": "نص تجريبي. أضف سطرًا أو سطرين عن هذه الحملة وما سيغطيه الهدف."
+        }
+      ],
+      "image": {
+        "src": "/images/photos/church-st-nicholas.jpg",
+        "alt": {
+          "en": "A white church with a bell tower and a green roof",
+          "es": "Una iglesia blanca con campanario y tejado verde",
+          "ar": "كنيسة بيضاء ببرج أجراس وسقف أخضر"
+        }
+      },
+      "goal": 25000,
+      "fundId": "church-repair-grants",
+      "provider": "stripe",
+      "deadline": "2027-04-15",
+      "program": "church-repair-grants",
+      "updates": []
+    }
+  ]
+}

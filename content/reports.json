@@ -1,0 +1,33 @@
+{
+  "$schema": "../schemas/reports.schema.json",
+  "items": [
+    {
+      "title": { "en": "Sample annual report 2025", "es": "Informe anual de muestra 2025", "ar": "التقرير السنوي التجريبي ٢٠٢٥" },
+      "year": 2025,
+      "kind": "annual-report",
+      "file": "/downloads/sample-annual-report-2025.pdf",
+      "sizeKb": 2
+    },
+    {
+      "title": { "en": "Sample financial statements 2025", "es": "Estados financieros de muestra 2025", "ar": "البيانات المالية التجريبية ٢٠٢٥" },
+      "year": 2025,
+      "kind": "financial-statement",
+      "file": "/downloads/sample-financial-statements-2025.pdf",
+      "sizeKb": 2
+    },
+    {
+      "title": { "en": "Sample annual report 2024", "es": "Informe anual de muestra 2024", "ar": "التقرير السنوي التجريبي ٢٠٢٤" },
+      "year": 2024,
+      "kind": "annual-report",
+      "file": "/downloads/sample-annual-report-2024.pdf",
+      "sizeKb": 2
+    },
+    {
+      "title": { "en": "Sample tax filing 2024", "es": "Declaración fiscal de muestra 2024", "ar": "الإقرار الضريبي التجريبي ٢٠٢٤" },
+      "year": 2024,
+      "kind": "tax-filing",
+      "file": "/downloads/sample-tax-filing-2024.pdf",
+      "sizeKb": 2
+    }
+  ]
+}

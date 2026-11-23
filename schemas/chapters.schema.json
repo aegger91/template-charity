@@ -1,0 +1,60 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Chapters and partner parishes",
+  "type": "object",
+  "required": [
+    "regions",
+    "items"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "regions": {
+      "type": "object",
+      "additionalProperties": {
+        "$ref": "common.schema.json#/$defs/localized"
+      },
+      "description": "Region id to display name."
+    },
+    "items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "name",
+          "type",
+          "city",
+          "region",
+          "country",
+          "email"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "name": {
+            "$ref": "common.schema.json#/$defs/localized"
+          },
+          "type": {
+            "enum": [
+              "chapter",
+              "partner-parish"
+            ]
+          },
+          "city": {
+            "$ref": "common.schema.json#/$defs/localized"
+          },
+          "region": {
+            "type": "string"
+          },
+          "country": {
+            "$ref": "common.schema.json#/$defs/localized"
+          },
+          "email": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}
